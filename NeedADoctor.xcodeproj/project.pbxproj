@@ -58,6 +58,12 @@
 		09227D7E1C9C05F700F765B8 /* NeedADoctor */ = {
 			isa = PBXGroup;
 			children = (
+				09227D961C9C2C4200F765B8 /* Application */,
+				09227D971C9C2C4200F765B8 /* Categories */,
+				09227D981C9C2C4200F765B8 /* Models */,
+				09227D991C9C2C4200F765B8 /* Resources */,
+				09227D9A1C9C2C4200F765B8 /* Utils */,
+				09227D9B1C9C2C4200F765B8 /* ViewControllers */,
 				09227D821C9C05F700F765B8 /* AppDelegate.h */,
 				09227D831C9C05F700F765B8 /* AppDelegate.m */,
 				09227D851C9C05F700F765B8 /* ViewController.h */,
@@ -77,6 +83,48 @@
 				09227D801C9C05F700F765B8 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		09227D961C9C2C4200F765B8 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		09227D971C9C2C4200F765B8 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		09227D981C9C2C4200F765B8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		09227D991C9C2C4200F765B8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		09227D9A1C9C2C4200F765B8 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		09227D9B1C9C2C4200F765B8 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
