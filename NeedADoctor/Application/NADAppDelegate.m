@@ -6,13 +6,13 @@
 //  Copyright © 2016 Dmitry Terekhov. All rights reserved.
 //
 
-#import "AppDelegate.h"
+#import "NADAppDelegate.h"
 
-@interface AppDelegate ()
+@interface NADAppDelegate ()
 
 @end
 
-@implementation AppDelegate
+@implementation NADAppDelegate
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {

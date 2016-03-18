@@ -7,25 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		09227D811C9C05F700F765B8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 09227D801C9C05F700F765B8 /* main.m */; };
-		09227D841C9C05F700F765B8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 09227D831C9C05F700F765B8 /* AppDelegate.m */; };
-		09227D871C9C05F700F765B8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09227D861C9C05F700F765B8 /* ViewController.m */; };
-		09227D8A1C9C05F700F765B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09227D881C9C05F700F765B8 /* Main.storyboard */; };
-		09227D8C1C9C05F700F765B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09227D8B1C9C05F700F765B8 /* Assets.xcassets */; };
-		09227D8F1C9C05F700F765B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09227D8D1C9C05F700F765B8 /* LaunchScreen.storyboard */; };
+		09227DA21C9C2D0E00F765B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09227D9D1C9C2D0E00F765B8 /* Assets.xcassets */; };
+		09227DA31C9C2D0E00F765B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09227D9E1C9C2D0E00F765B8 /* LaunchScreen.storyboard */; };
+		09227DA41C9C2D0E00F765B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09227DA01C9C2D0E00F765B8 /* Main.storyboard */; };
+		09227DA71C9C2DA800F765B8 /* NADAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 09227DA61C9C2DA800F765B8 /* NADAppDelegate.m */; };
+		09227DAA1C9C2DB200F765B8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09227DA91C9C2DB200F765B8 /* ViewController.m */; };
+		09227DAC1C9C2E3500F765B8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 09227DAB1C9C2E3500F765B8 /* main.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		09227D7C1C9C05F700F765B8 /* NeedADoctor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NeedADoctor.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		09227D801C9C05F700F765B8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		09227D821C9C05F700F765B8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		09227D831C9C05F700F765B8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		09227D851C9C05F700F765B8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		09227D861C9C05F700F765B8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		09227D891C9C05F700F765B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		09227D8B1C9C05F700F765B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		09227D8E1C9C05F700F765B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		09227D901C9C05F700F765B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09227D7C1C9C05F700F765B8 /* Хочу к врачу.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Хочу к врачу.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		09227D9D1C9C2D0E00F765B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		09227D9F1C9C2D0E00F765B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		09227DA11C9C2D0E00F765B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		09227DA51C9C2DA800F765B8 /* NADAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NADAppDelegate.h; sourceTree = "<group>"; };
+		09227DA61C9C2DA800F765B8 /* NADAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NADAppDelegate.m; sourceTree = "<group>"; };
+		09227DA81C9C2DB200F765B8 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		09227DA91C9C2DB200F765B8 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		09227DAB1C9C2E3500F765B8 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		09227DAD1C9C2E4900F765B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,7 +50,7 @@
 		09227D7D1C9C05F700F765B8 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				09227D7C1C9C05F700F765B8 /* NeedADoctor.app */,
+				09227D7C1C9C05F700F765B8 /* Хочу к врачу.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -61,33 +61,20 @@
 				09227D961C9C2C4200F765B8 /* Application */,
 				09227D971C9C2C4200F765B8 /* Categories */,
 				09227D981C9C2C4200F765B8 /* Models */,
-				09227D991C9C2C4200F765B8 /* Resources */,
 				09227D9A1C9C2C4200F765B8 /* Utils */,
+				09227D9C1C9C2D0E00F765B8 /* Resources */,
 				09227D9B1C9C2C4200F765B8 /* ViewControllers */,
-				09227D821C9C05F700F765B8 /* AppDelegate.h */,
-				09227D831C9C05F700F765B8 /* AppDelegate.m */,
-				09227D851C9C05F700F765B8 /* ViewController.h */,
-				09227D861C9C05F700F765B8 /* ViewController.m */,
-				09227D881C9C05F700F765B8 /* Main.storyboard */,
-				09227D8B1C9C05F700F765B8 /* Assets.xcassets */,
-				09227D8D1C9C05F700F765B8 /* LaunchScreen.storyboard */,
-				09227D901C9C05F700F765B8 /* Info.plist */,
-				09227D7F1C9C05F700F765B8 /* Supporting Files */,
 			);
 			path = NeedADoctor;
-			sourceTree = "<group>";
-		};
-		09227D7F1C9C05F700F765B8 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				09227D801C9C05F700F765B8 /* main.m */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		09227D961C9C2C4200F765B8 /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				09227DA51C9C2DA800F765B8 /* NADAppDelegate.h */,
+				09227DA61C9C2DA800F765B8 /* NADAppDelegate.m */,
+				09227DAB1C9C2E3500F765B8 /* main.m */,
+				09227DAD1C9C2E4900F765B8 /* Info.plist */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -106,13 +93,6 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		09227D991C9C2C4200F765B8 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
 		09227D9A1C9C2C4200F765B8 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
@@ -123,8 +103,20 @@
 		09227D9B1C9C2C4200F765B8 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				09227DA81C9C2DB200F765B8 /* ViewController.h */,
+				09227DA91C9C2DB200F765B8 /* ViewController.m */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		09227D9C1C9C2D0E00F765B8 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				09227D9D1C9C2D0E00F765B8 /* Assets.xcassets */,
+				09227D9E1C9C2D0E00F765B8 /* LaunchScreen.storyboard */,
+				09227DA01C9C2D0E00F765B8 /* Main.storyboard */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,7 +136,7 @@
 			);
 			name = NeedADoctor;
 			productName = NeedADoctor;
-			productReference = 09227D7C1C9C05F700F765B8 /* NeedADoctor.app */;
+			productReference = 09227D7C1C9C05F700F765B8 /* Хочу к врачу.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -185,9 +177,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				09227D8F1C9C05F700F765B8 /* LaunchScreen.storyboard in Resources */,
-				09227D8C1C9C05F700F765B8 /* Assets.xcassets in Resources */,
-				09227D8A1C9C05F700F765B8 /* Main.storyboard in Resources */,
+				09227DA21C9C2D0E00F765B8 /* Assets.xcassets in Resources */,
+				09227DA41C9C2D0E00F765B8 /* Main.storyboard in Resources */,
+				09227DA31C9C2D0E00F765B8 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -198,29 +190,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				09227D871C9C05F700F765B8 /* ViewController.m in Sources */,
-				09227D841C9C05F700F765B8 /* AppDelegate.m in Sources */,
-				09227D811C9C05F700F765B8 /* main.m in Sources */,
+				09227DA71C9C2DA800F765B8 /* NADAppDelegate.m in Sources */,
+				09227DAC1C9C2E3500F765B8 /* main.m in Sources */,
+				09227DAA1C9C2DB200F765B8 /* ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		09227D881C9C05F700F765B8 /* Main.storyboard */ = {
+		09227D9E1C9C2D0E00F765B8 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				09227D891C9C05F700F765B8 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		09227D8D1C9C05F700F765B8 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				09227D8E1C9C05F700F765B8 /* Base */,
+				09227D9F1C9C2D0E00F765B8 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		09227DA01C9C2D0E00F765B8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				09227DA11C9C2D0E00F765B8 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -312,10 +304,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = NeedADoctor/Info.plist;
+				INFOPLIST_FILE = NeedADoctor/Application/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dterekhov.NeedADoctor;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Хочу к врачу";
 			};
 			name = Debug;
 		};
@@ -323,10 +315,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = NeedADoctor/Info.plist;
+				INFOPLIST_FILE = NeedADoctor/Application/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dterekhov.NeedADoctor;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Хочу к врачу";
 			};
 			name = Release;
 		};
