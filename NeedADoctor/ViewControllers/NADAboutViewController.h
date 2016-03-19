@@ -1,5 +1,5 @@
 //
-//  NADSettingsViewController.h
+//  NADAboutViewController.h
 //  NeedADoctor
 //
 //  Created by Dmitry Terekhov on 3/19/16.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface NADSettingsViewController : UITableViewController
+@interface NADAboutViewController : UIViewController
 
 @end
