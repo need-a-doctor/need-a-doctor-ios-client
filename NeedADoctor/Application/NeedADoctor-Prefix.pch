@@ -1,0 +1,16 @@
+//
+//  NeedADoctor-Prefix.pch
+//  NeedADoctor
+//
+//  Created by Dmitry Terekhov on 3/19/16.
+//  Copyright © 2016 Dmitry Terekhov. All rights reserved.
+//
+
+#ifndef NeedADoctor_Prefix_pch
+#define NeedADoctor_Prefix_pch
+
+#import "NADAppDelegate+NADNetwork.h"
+#import <MBProgressHUD/MBProgressHUD.h>
+#import <DTerekhovKit/DTerekhovKit.h>
+
+#endif /* NeedADoctor_Prefix_pch */

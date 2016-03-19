@@ -1,0 +1,1 @@
+../../../DTerekhovKit/DTerekhovKit/DTAlignmentMiddleTextView.h
