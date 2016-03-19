@@ -6,15 +6,15 @@
 //  Copyright © 2016 Dmitry Terekhov. All rights reserved.
 //
 
-#import "NADLeftMenuViewController.h"
+#import "NADLeftSideMenuViewController.h"
 
-@interface NADLeftMenuViewController ()
+@interface NADLeftSideMenuViewController ()
 
 @property (strong, readwrite, nonatomic) UITableView *tableView;
 
 @end
 
-@implementation NADLeftMenuViewController
+@implementation NADLeftSideMenuViewController
 
 - (void)viewDidLoad
 {
@@ -42,12 +42,15 @@
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     switch (indexPath.row) {
         case 0:
-            [self.sideMenuViewController setContentViewController:[[UINavigationController alloc] initWithRootViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"firstViewController"]]
+            [self.sideMenuViewController setContentViewController:[[UINavigationController alloc] initWithRootViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"NADMyRecordsViewController"]]
                                                          animated:YES];
             [self.sideMenuViewController hideMenuViewController];
             break;
         case 1:
-            [self.sideMenuViewController setContentViewController:[[UINavigationController alloc] initWithRootViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"secondViewController"]]
+            [self.sideMenuViewController setContentViewController:[[UINavigationController alloc] initWithRootViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"NADDoctorsViewController"]]
+                                                         animated:YES];
+        case 2:
+            [self.sideMenuViewController setContentViewController:[[UINavigationController alloc] initWithRootViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"NADSettingsViewController"]]
                                                          animated:YES];
             [self.sideMenuViewController hideMenuViewController];
             break;

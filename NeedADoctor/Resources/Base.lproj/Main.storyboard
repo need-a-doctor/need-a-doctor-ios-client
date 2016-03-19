@@ -26,7 +26,7 @@
         <!--Мои записи-->
         <scene sceneID="c3g-4b-8rt">
             <objects>
-                <viewController storyboardIdentifier="firstViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="I0t-BA-uCB" customClass="NADFirstViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="NADMyRecordsViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="I0t-BA-uCB" customClass="NADMyRecordsViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="qcL-Fm-QIq"/>
                         <viewControllerLayoutGuide type="bottom" id="NkD-Et-DdI"/>
@@ -51,7 +51,7 @@
         <!--Врачи-->
         <scene sceneID="gSk-9b-jEk">
             <objects>
-                <viewController restorationIdentifier="secondViewController" storyboardIdentifier="secondViewController" id="QUU-GA-gcU" customClass="NADSecondViewController" sceneMemberID="viewController">
+                <viewController restorationIdentifier="NADDoctorsViewController" storyboardIdentifier="NADDoctorsViewController" id="QUU-GA-gcU" customClass="NADDoctorsViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="5Aq-AE-sTY"/>
                         <viewControllerLayoutGuide type="bottom" id="Odw-GX-ddf"/>
@@ -59,7 +59,7 @@
                     <view key="view" contentMode="scaleToFill" id="abg-7t-UlI">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.53333333329999999" green="0.84313725490000002" blue="0.15686274510000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.12941176469999999" green="0.58823529409999997" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" title="Врачи" id="9CF-dZ-Ww0">
                         <barButtonItem key="leftBarButtonItem" image="btn_side_menu" id="YZd-rx-clQ">
@@ -73,6 +73,31 @@
             </objects>
             <point key="canvasLocation" x="2267" y="1106"/>
         </scene>
+        <!--Настройки-->
+        <scene sceneID="hi5-mu-NfQ">
+            <objects>
+                <viewController restorationIdentifier="NADSettingsViewController" storyboardIdentifier="NADSettingsViewController" id="ULu-1p-kiI" customClass="NADSettingsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="K4d-O9-CqV"/>
+                        <viewControllerLayoutGuide type="bottom" id="cuQ-Dg-q9A"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jPI-nu-sBI">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.12941176469999999" green="0.58823529409999997" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Настройки" id="nLd-X3-h5f">
+                        <barButtonItem key="leftBarButtonItem" image="btn_side_menu" id="l6C-x4-pqm">
+                            <connections>
+                                <action selector="presentLeftMenuViewController:" destination="ULu-1p-kiI" id="Ob7-wb-v1L"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MkX-vD-fAO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2261" y="1876"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="lWA-rX-FLO">
             <objects>
@@ -85,17 +110,18 @@
                     <nil name="viewControllers"/>
                     <connections>
                         <segue destination="I0t-BA-uCB" kind="relationship" relationship="rootViewController" id="Yrp-7G-MhD"/>
-                        <segue destination="QUU-GA-gcU" kind="show" identifier="showSecondVC" id="Ojv-9I-kf5"/>
+                        <segue destination="QUU-GA-gcU" kind="show" identifier="showDoctorsVC" id="Ojv-9I-kf5"/>
+                        <segue destination="ULu-1p-kiI" kind="show" identifier="showSettingsVC" id="4G8-n7-1bt"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J4Y-dQ-HVR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1515" y="327"/>
         </scene>
-        <!--Left Menu View Controller-->
+        <!--Left Side Menu View Controller-->
         <scene sceneID="Irm-GT-0PP">
             <objects>
-                <viewController restorationIdentifier="leftMenuViewController" storyboardIdentifier="leftMenuViewController" id="bRe-Ew-u1o" customClass="NADLeftMenuViewController" sceneMemberID="viewController">
+                <viewController restorationIdentifier="leftMenuViewController" storyboardIdentifier="leftMenuViewController" id="bRe-Ew-u1o" customClass="NADLeftSideMenuViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="RoZ-C7-eaV"/>
                         <viewControllerLayoutGuide type="bottom" id="qNv-5b-TwW"/>
@@ -108,7 +134,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CY4-Wr-ZFd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1523" y="1106"/>
+            <point key="canvasLocation" x="1515" y="-390"/>
         </scene>
     </scenes>
     <resources>

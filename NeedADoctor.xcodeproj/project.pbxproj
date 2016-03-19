@@ -13,10 +13,11 @@
 		09227DA71C9C2DA800F765B8 /* NADAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 09227DA61C9C2DA800F765B8 /* NADAppDelegate.m */; };
 		09227DAA1C9C2DB200F765B8 /* NADRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09227DA91C9C2DB200F765B8 /* NADRootViewController.m */; };
 		09227DAC1C9C2E3500F765B8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 09227DAB1C9C2E3500F765B8 /* main.m */; };
-		0987B6CA1C9C44B700DE607C /* NADLeftMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0987B6C91C9C44B700DE607C /* NADLeftMenuViewController.m */; };
-		0987B6CD1C9C45EC00DE607C /* NADFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0987B6CC1C9C45EC00DE607C /* NADFirstViewController.m */; };
-		0987B6D01C9C45FA00DE607C /* NADSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0987B6CF1C9C45FA00DE607C /* NADSecondViewController.m */; };
+		0987B6CA1C9C44B700DE607C /* NADLeftSideMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0987B6C91C9C44B700DE607C /* NADLeftSideMenuViewController.m */; };
+		0987B6CD1C9C45EC00DE607C /* NADMyRecordsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0987B6CC1C9C45EC00DE607C /* NADMyRecordsViewController.m */; };
+		0987B6D01C9C45FA00DE607C /* NADDoctorsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0987B6CF1C9C45FA00DE607C /* NADDoctorsViewController.m */; };
 		0987B6D41C9D5F8700DE607C /* NADAppDelegate+NADNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = 0987B6D31C9D5F8700DE607C /* NADAppDelegate+NADNetwork.m */; };
+		0987B6D71C9D658100DE607C /* NADSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0987B6D61C9D658100DE607C /* NADSettingsViewController.m */; };
 		37A33953C9585151AE5B0027 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5944899E5561976B75CCEB83 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -31,15 +32,17 @@
 		09227DA91C9C2DB200F765B8 /* NADRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NADRootViewController.m; sourceTree = "<group>"; };
 		09227DAB1C9C2E3500F765B8 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		09227DAD1C9C2E4900F765B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0987B6C81C9C44B700DE607C /* NADLeftMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NADLeftMenuViewController.h; sourceTree = "<group>"; };
-		0987B6C91C9C44B700DE607C /* NADLeftMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NADLeftMenuViewController.m; sourceTree = "<group>"; };
-		0987B6CB1C9C45EC00DE607C /* NADFirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NADFirstViewController.h; sourceTree = "<group>"; };
-		0987B6CC1C9C45EC00DE607C /* NADFirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NADFirstViewController.m; sourceTree = "<group>"; };
-		0987B6CE1C9C45FA00DE607C /* NADSecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NADSecondViewController.h; sourceTree = "<group>"; };
-		0987B6CF1C9C45FA00DE607C /* NADSecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NADSecondViewController.m; sourceTree = "<group>"; };
+		0987B6C81C9C44B700DE607C /* NADLeftSideMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NADLeftSideMenuViewController.h; sourceTree = "<group>"; };
+		0987B6C91C9C44B700DE607C /* NADLeftSideMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NADLeftSideMenuViewController.m; sourceTree = "<group>"; };
+		0987B6CB1C9C45EC00DE607C /* NADMyRecordsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NADMyRecordsViewController.h; sourceTree = "<group>"; };
+		0987B6CC1C9C45EC00DE607C /* NADMyRecordsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NADMyRecordsViewController.m; sourceTree = "<group>"; };
+		0987B6CE1C9C45FA00DE607C /* NADDoctorsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NADDoctorsViewController.h; sourceTree = "<group>"; };
+		0987B6CF1C9C45FA00DE607C /* NADDoctorsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NADDoctorsViewController.m; sourceTree = "<group>"; };
 		0987B6D11C9D5E4800DE607C /* NeedADoctor-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NeedADoctor-Prefix.pch"; sourceTree = "<group>"; };
 		0987B6D21C9D5F8700DE607C /* NADAppDelegate+NADNetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NADAppDelegate+NADNetwork.h"; sourceTree = "<group>"; };
 		0987B6D31C9D5F8700DE607C /* NADAppDelegate+NADNetwork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NADAppDelegate+NADNetwork.m"; sourceTree = "<group>"; };
+		0987B6D51C9D658100DE607C /* NADSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NADSettingsViewController.h; sourceTree = "<group>"; };
+		0987B6D61C9D658100DE607C /* NADSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NADSettingsViewController.m; sourceTree = "<group>"; };
 		1C7E27EDE5B34CA00FF9EEB9 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		3A327FCD1CB98E41DC76C3E3 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		5944899E5561976B75CCEB83 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -128,12 +131,14 @@
 			children = (
 				09227DA81C9C2DB200F765B8 /* NADRootViewController.h */,
 				09227DA91C9C2DB200F765B8 /* NADRootViewController.m */,
-				0987B6C81C9C44B700DE607C /* NADLeftMenuViewController.h */,
-				0987B6C91C9C44B700DE607C /* NADLeftMenuViewController.m */,
-				0987B6CB1C9C45EC00DE607C /* NADFirstViewController.h */,
-				0987B6CC1C9C45EC00DE607C /* NADFirstViewController.m */,
-				0987B6CE1C9C45FA00DE607C /* NADSecondViewController.h */,
-				0987B6CF1C9C45FA00DE607C /* NADSecondViewController.m */,
+				0987B6C81C9C44B700DE607C /* NADLeftSideMenuViewController.h */,
+				0987B6C91C9C44B700DE607C /* NADLeftSideMenuViewController.m */,
+				0987B6CB1C9C45EC00DE607C /* NADMyRecordsViewController.h */,
+				0987B6CC1C9C45EC00DE607C /* NADMyRecordsViewController.m */,
+				0987B6CE1C9C45FA00DE607C /* NADDoctorsViewController.h */,
+				0987B6CF1C9C45FA00DE607C /* NADDoctorsViewController.m */,
+				0987B6D51C9D658100DE607C /* NADSettingsViewController.h */,
+				0987B6D61C9D658100DE607C /* NADSettingsViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -301,9 +306,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0987B6D01C9C45FA00DE607C /* NADSecondViewController.m in Sources */,
-				0987B6CD1C9C45EC00DE607C /* NADFirstViewController.m in Sources */,
-				0987B6CA1C9C44B700DE607C /* NADLeftMenuViewController.m in Sources */,
+				0987B6D01C9C45FA00DE607C /* NADDoctorsViewController.m in Sources */,
+				0987B6D71C9D658100DE607C /* NADSettingsViewController.m in Sources */,
+				0987B6CD1C9C45EC00DE607C /* NADMyRecordsViewController.m in Sources */,
+				0987B6CA1C9C44B700DE607C /* NADLeftSideMenuViewController.m in Sources */,
 				09227DA71C9C2DA800F765B8 /* NADAppDelegate.m in Sources */,
 				09227DAC1C9C2E3500F765B8 /* main.m in Sources */,
 				09227DAA1C9C2DB200F765B8 /* NADRootViewController.m in Sources */,

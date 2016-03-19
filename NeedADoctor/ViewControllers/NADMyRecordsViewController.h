@@ -1,5 +1,5 @@
 //
-//  NADSecondViewController.h
+//  NADMyRecordsViewController.h
 //  NeedADoctor
 //
 //  Created by Dmitry Terekhov on 3/18/16.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface NADSecondViewController : UIViewController
+@interface NADMyRecordsViewController : UIViewController
 
 @end
