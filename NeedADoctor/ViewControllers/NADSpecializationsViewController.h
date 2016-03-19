@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface NADDoctorsViewController : UIViewController
+@interface NADSpecializationsViewController : UIViewController
 
 @end

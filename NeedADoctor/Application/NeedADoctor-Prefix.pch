@@ -11,6 +11,7 @@
 
 #import "NADAppDelegate+NADNetwork.h"
 #import <MBProgressHUD/MBProgressHUD.h>
+#import <Mantle/Mantle.h>
 #import <DTerekhovKit/DTerekhovKit.h>
 
 #endif /* NeedADoctor_Prefix_pch */

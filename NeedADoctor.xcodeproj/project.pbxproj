@@ -15,10 +15,11 @@
 		09227DAC1C9C2E3500F765B8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 09227DAB1C9C2E3500F765B8 /* main.m */; };
 		0987B6CA1C9C44B700DE607C /* NADLeftSideMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0987B6C91C9C44B700DE607C /* NADLeftSideMenuViewController.m */; };
 		0987B6CD1C9C45EC00DE607C /* NADMyRecordsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0987B6CC1C9C45EC00DE607C /* NADMyRecordsViewController.m */; };
-		0987B6D01C9C45FA00DE607C /* NADDoctorsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0987B6CF1C9C45FA00DE607C /* NADDoctorsViewController.m */; };
+		0987B6D01C9C45FA00DE607C /* NADSpecializationsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0987B6CF1C9C45FA00DE607C /* NADSpecializationsViewController.m */; };
 		0987B6D41C9D5F8700DE607C /* NADAppDelegate+NADNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = 0987B6D31C9D5F8700DE607C /* NADAppDelegate+NADNetwork.m */; };
 		0987B6D71C9D658100DE607C /* NADSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0987B6D61C9D658100DE607C /* NADSettingsViewController.m */; };
 		0987B6DA1C9D8AF400DE607C /* NADAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0987B6D91C9D8AF400DE607C /* NADAboutViewController.m */; };
+		09A594B21C9DA42200B8EF0D /* NADSpecializationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 09A594B11C9DA42200B8EF0D /* NADSpecializationModel.m */; };
 		37A33953C9585151AE5B0027 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5944899E5561976B75CCEB83 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -37,8 +38,8 @@
 		0987B6C91C9C44B700DE607C /* NADLeftSideMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NADLeftSideMenuViewController.m; sourceTree = "<group>"; };
 		0987B6CB1C9C45EC00DE607C /* NADMyRecordsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NADMyRecordsViewController.h; sourceTree = "<group>"; };
 		0987B6CC1C9C45EC00DE607C /* NADMyRecordsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NADMyRecordsViewController.m; sourceTree = "<group>"; };
-		0987B6CE1C9C45FA00DE607C /* NADDoctorsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NADDoctorsViewController.h; sourceTree = "<group>"; };
-		0987B6CF1C9C45FA00DE607C /* NADDoctorsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NADDoctorsViewController.m; sourceTree = "<group>"; };
+		0987B6CE1C9C45FA00DE607C /* NADSpecializationsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NADSpecializationsViewController.h; sourceTree = "<group>"; };
+		0987B6CF1C9C45FA00DE607C /* NADSpecializationsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NADSpecializationsViewController.m; sourceTree = "<group>"; };
 		0987B6D11C9D5E4800DE607C /* NeedADoctor-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NeedADoctor-Prefix.pch"; sourceTree = "<group>"; };
 		0987B6D21C9D5F8700DE607C /* NADAppDelegate+NADNetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NADAppDelegate+NADNetwork.h"; sourceTree = "<group>"; };
 		0987B6D31C9D5F8700DE607C /* NADAppDelegate+NADNetwork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NADAppDelegate+NADNetwork.m"; sourceTree = "<group>"; };
@@ -46,6 +47,8 @@
 		0987B6D61C9D658100DE607C /* NADSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NADSettingsViewController.m; sourceTree = "<group>"; };
 		0987B6D81C9D8AF400DE607C /* NADAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NADAboutViewController.h; sourceTree = "<group>"; };
 		0987B6D91C9D8AF400DE607C /* NADAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NADAboutViewController.m; sourceTree = "<group>"; };
+		09A594B01C9DA42200B8EF0D /* NADSpecializationModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NADSpecializationModel.h; sourceTree = "<group>"; };
+		09A594B11C9DA42200B8EF0D /* NADSpecializationModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NADSpecializationModel.m; sourceTree = "<group>"; };
 		1C7E27EDE5B34CA00FF9EEB9 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		3A327FCD1CB98E41DC76C3E3 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		5944899E5561976B75CCEB83 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -118,6 +121,8 @@
 		09227D981C9C2C4200F765B8 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				09A594B01C9DA42200B8EF0D /* NADSpecializationModel.h */,
+				09A594B11C9DA42200B8EF0D /* NADSpecializationModel.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -138,8 +143,8 @@
 				0987B6C91C9C44B700DE607C /* NADLeftSideMenuViewController.m */,
 				0987B6CB1C9C45EC00DE607C /* NADMyRecordsViewController.h */,
 				0987B6CC1C9C45EC00DE607C /* NADMyRecordsViewController.m */,
-				0987B6CE1C9C45FA00DE607C /* NADDoctorsViewController.h */,
-				0987B6CF1C9C45FA00DE607C /* NADDoctorsViewController.m */,
+				0987B6CE1C9C45FA00DE607C /* NADSpecializationsViewController.h */,
+				0987B6CF1C9C45FA00DE607C /* NADSpecializationsViewController.m */,
 				0987B6D51C9D658100DE607C /* NADSettingsViewController.h */,
 				0987B6D61C9D658100DE607C /* NADSettingsViewController.m */,
 				0987B6D81C9D8AF400DE607C /* NADAboutViewController.h */,
@@ -311,8 +316,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0987B6D01C9C45FA00DE607C /* NADDoctorsViewController.m in Sources */,
+				0987B6D01C9C45FA00DE607C /* NADSpecializationsViewController.m in Sources */,
 				0987B6D71C9D658100DE607C /* NADSettingsViewController.m in Sources */,
+				09A594B21C9DA42200B8EF0D /* NADSpecializationModel.m in Sources */,
 				0987B6CD1C9C45EC00DE607C /* NADMyRecordsViewController.m in Sources */,
 				0987B6CA1C9C44B700DE607C /* NADLeftSideMenuViewController.m in Sources */,
 				09227DA71C9C2DA800F765B8 /* NADAppDelegate.m in Sources */,

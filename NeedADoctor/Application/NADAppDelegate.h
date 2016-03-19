@@ -11,5 +11,6 @@
 @interface NADAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+NADAppDelegate *App();
 
 @end

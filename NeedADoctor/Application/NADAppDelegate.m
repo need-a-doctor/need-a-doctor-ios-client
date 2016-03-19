@@ -14,6 +14,10 @@
 
 @implementation NADAppDelegate
 
+NADAppDelegate *App() {
+    return [[UIApplication sharedApplication] delegate];
+}
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Setups UI for navigationBar in whole App
     [UINavigationBar dt_setupAppearanceWithBackgroundColor:NavigationBarBackgroundColor];
