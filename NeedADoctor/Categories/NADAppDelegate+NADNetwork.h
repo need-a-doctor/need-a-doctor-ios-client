@@ -7,7 +7,10 @@
 //
 
 #import "NADAppDelegate.h"
+#import <AFNetworking/AFNetworking.h>
 
 @interface NADAppDelegate (NADNetwork)
+
+@property (nonatomic, readonly) AFHTTPSessionManager *networkManager;
 
 @end

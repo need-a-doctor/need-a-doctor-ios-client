@@ -10,7 +10,7 @@
 #import <Fabric/Fabric.h>
 #import <Crashlytics/Crashlytics.h>
 
-#define NavigationBarBackgroundColor [UIColor colorWithRed:0.13 green:0.59 blue:0.95 alpha:1]
+#define NavigationBarBackgroundColor [UIColor colorWithRed:0.1 green:0.46 blue:0.82 alpha:1]
 
 @implementation NADAppDelegate
 
