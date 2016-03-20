@@ -7,6 +7,7 @@
 //
 
 #import "NADDoctorTableViewCell.h"
+#import "NADReceptionTime.h"
 
 @interface NADDoctorTableViewCell ()
 
@@ -23,14 +24,40 @@
 @property (weak, nonatomic) IBOutlet UILabel *doctorNameLabel;
 
 // Reception hours
-@property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *receptionHoursButtons;
+@property (weak, nonatomic) IBOutlet UIButton *recepientHours1;
+@property (weak, nonatomic) IBOutlet UIButton *recepientHours2;
+@property (weak, nonatomic) IBOutlet UIButton *recepientHours3;
+@property (weak, nonatomic) IBOutlet UIButton *recepientHours4;
+@property (weak, nonatomic) IBOutlet UIButton *recepientHours5;
+
 @property (weak, nonatomic) IBOutlet UIButton *moreReceptionHoursButton;
 
 @end
 
 @implementation NADDoctorTableViewCell
 
+#pragma mark - Setups
 - (void)setupWithDay:(NSDate *)day doctor:(NADDoctorModel *)doctor {
+    // Borders
+    for (UIButton *receptionButton in self.recepientHoursButtons) {
+        [self setupButtonUI:receptionButton];
+        
+    }
+    [self setupButtonUI:self.moreReceptionHoursButton];
+    
+    for (int i = 0; i < doctor.receptionTimes.count && i < 5; i++) {
+        UIButton *button = self.recepientHoursButtons[i];
+        button.hidden = NO;
+        NSDate *receptionTime = [doctor.receptionTimes[i] time];
+        NSDateFormatter *formatter = [NSDateFormatter new];
+        [formatter setDateFormat:@"HH:mm"];
+        NSString *receptionTimeString = [formatter stringFromDate:receptionTime];
+        [button setTitle:receptionTimeString forState:UIControlStateNormal];
+    }
+    if (doctor.receptionTimes.count > 5) {
+        self.moreReceptionHoursButton.hidden = NO;
+    }
+    
     NSDateComponents *components = [[NSCalendar currentCalendar] components:NSCalendarUnitYear|NSCalendarUnitMonth|NSCalendarUnitDay fromDate:day];
     NSDateFormatter *formatter = [NSDateFormatter new];
     
@@ -43,6 +70,23 @@
     self.clinicNameLabel.text = doctor.clinic.name;
     self.clinicAddressLabel.text = doctor.clinic.address;
     self.doctorNameLabel.text = doctor.name;
+}
+
+- (void)setupButtonUI:(UIButton *)button {
+    button.layer.borderWidth = 1.0;
+    button.layer.borderColor = [UIColor lightGrayColor].CGColor;
+    button.layer.cornerRadius = 5.0;
+    [button setTitleColor:[UIColor lightGrayColor] forState:UIControlStateNormal];
+}
+
+#pragma mark - Accessors
+- (NSArray *)recepientHoursButtons {
+    return @[self.recepientHours1,
+             self.recepientHours2,
+             self.recepientHours3,
+             self.recepientHours4,
+             self.recepientHours5
+             ];
 }
 
 #pragma mark - Helpers
