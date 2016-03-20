@@ -26,6 +26,7 @@
 		09A594BE1C9EAD3E00B8EF0D /* NADReceptionTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 09A594BD1C9EAD3E00B8EF0D /* NADReceptionTime.m */; };
 		09A594C11C9EB3E700B8EF0D /* NADDayOfDoctorModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 09A594C01C9EB3E700B8EF0D /* NADDayOfDoctorModel.m */; };
 		09A594C61C9EC63C00B8EF0D /* NADClinic.m in Sources */ = {isa = PBXBuildFile; fileRef = 09A594C51C9EC63C00B8EF0D /* NADClinic.m */; };
+		09A594C91C9F186E00B8EF0D /* NADAuthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09A594C81C9F186E00B8EF0D /* NADAuthViewController.m */; };
 		37A33953C9585151AE5B0027 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5944899E5561976B75CCEB83 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -69,6 +70,8 @@
 		09A594C31C9EC01900B8EF0D /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		09A594C41C9EC63C00B8EF0D /* NADClinic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NADClinic.h; sourceTree = "<group>"; };
 		09A594C51C9EC63C00B8EF0D /* NADClinic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NADClinic.m; sourceTree = "<group>"; };
+		09A594C71C9F186E00B8EF0D /* NADAuthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NADAuthViewController.h; sourceTree = "<group>"; };
+		09A594C81C9F186E00B8EF0D /* NADAuthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NADAuthViewController.m; sourceTree = "<group>"; };
 		1C7E27EDE5B34CA00FF9EEB9 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		3A327FCD1CB98E41DC76C3E3 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		5944899E5561976B75CCEB83 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -181,6 +184,8 @@
 				09A594B41C9E9F2400B8EF0D /* NADDoctorsViewController.m */,
 				09A594B61C9EA90800B8EF0D /* NADDoctorTableViewCell.h */,
 				09A594B71C9EA90800B8EF0D /* NADDoctorTableViewCell.m */,
+				09A594C71C9F186E00B8EF0D /* NADAuthViewController.h */,
+				09A594C81C9F186E00B8EF0D /* NADAuthViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -350,6 +355,7 @@
 			files = (
 				0987B6D01C9C45FA00DE607C /* NADSpecializationsViewController.m in Sources */,
 				0987B6D71C9D658100DE607C /* NADSettingsViewController.m in Sources */,
+				09A594C91C9F186E00B8EF0D /* NADAuthViewController.m in Sources */,
 				09A594BB1C9EAB4900B8EF0D /* NADDoctorModel.m in Sources */,
 				09A594B21C9DA42200B8EF0D /* NADSpecializationModel.m in Sources */,
 				09A594BE1C9EAD3E00B8EF0D /* NADReceptionTime.m in Sources */,

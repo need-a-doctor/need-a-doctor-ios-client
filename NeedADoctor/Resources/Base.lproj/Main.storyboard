@@ -40,7 +40,7 @@
                     <navigationItem key="navigationItem" title="Мои записи" id="s57-yb-8R7">
                         <barButtonItem key="leftBarButtonItem" image="btn_side_menu" id="2k7-bO-U4F">
                             <connections>
-                                <action selector="presentLeftMenuViewController:" destination="I0t-BA-uCB" id="UKs-kr-CLk"/>
+                                <action selector="presentLeftMenuViewController:" destination="I0t-BA-uCB" id="zG8-Ao-e7j"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -106,7 +106,7 @@
                     <navigationItem key="navigationItem" title="Специализации" id="9CF-dZ-Ww0">
                         <barButtonItem key="leftBarButtonItem" image="btn_side_menu" id="YZd-rx-clQ">
                             <connections>
-                                <action selector="presentLeftMenuViewController:" destination="QUU-GA-gcU" id="qGm-dp-3Jw"/>
+                                <action selector="presentLeftMenuViewController:" destination="QUU-GA-gcU" id="pgv-3Y-h6E"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -283,6 +283,7 @@
                     </view>
                     <connections>
                         <outlet property="tableView" destination="mDG-xD-IIE" id="p9m-2p-dvn"/>
+                        <segue destination="WB4-DU-ZAe" kind="presentation" identifier="showAuthVC" id="LTU-2l-Dho"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nLU-Hk-4Jd" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -394,6 +395,36 @@
             </objects>
             <point key="canvasLocation" x="2267" y="1850"/>
         </scene>
+        <!--Auth View Controller-->
+        <scene sceneID="3fz-tN-BnQ">
+            <objects>
+                <viewController id="K6w-78-9zd" customClass="NADAuthViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="sD6-k7-2Nu"/>
+                        <viewControllerLayoutGuide type="bottom" id="ehk-EV-000"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="KzY-V9-IyJ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="sEZ-jA-O5t">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="Tug-y8-UkI">
+                            <connections>
+                                <action selector="cancelButtonTapped:" destination="K6w-78-9zd" id="9dZ-TO-D3m"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Записаться" id="emJ-8e-TrY">
+                            <connections>
+                                <action selector="recordButtonTapped:" destination="K6w-78-9zd" id="i0v-gs-Axp"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OkP-AT-n9M" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4623" y="1106"/>
+        </scene>
         <!--About View Controller-->
         <scene sceneID="rwI-cH-u5x">
             <objects>
@@ -471,9 +502,9 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="I0t-BA-uCB" kind="relationship" relationship="rootViewController" id="Yrp-7G-MhD"/>
-                        <segue destination="QUU-GA-gcU" kind="show" identifier="showSpecializationsVC" id="Ojv-9I-kf5"/>
                         <segue destination="jPy-k3-Gzc" kind="show" identifier="showSettingsVC" id="pDc-gg-lT3"/>
+                        <segue destination="QUU-GA-gcU" kind="relationship" relationship="rootViewController" id="aex-Xc-FZq"/>
+                        <segue destination="I0t-BA-uCB" kind="show" identifier="showMyRecordsVC" id="W5v-fd-erZ"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J4Y-dQ-HVR" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -515,6 +546,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hKG-AP-SOg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2999" y="1850"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="AwF-Xb-4U4">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="WB4-DU-ZAe" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="wzJ-wq-S59">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="K6w-78-9zd" kind="relationship" relationship="rootViewController" id="LwM-gE-5Qu"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eHe-SM-VQ1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3811" y="1106"/>
         </scene>
     </scenes>
     <resources>

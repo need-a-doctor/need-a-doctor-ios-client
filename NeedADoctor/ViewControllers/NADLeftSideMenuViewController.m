@@ -42,13 +42,15 @@
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     switch (indexPath.row) {
         case 0:
-            [self.sideMenuViewController setContentViewController:[[UINavigationController alloc] initWithRootViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"NADMyRecordsViewController"]]
+            [self.sideMenuViewController setContentViewController:[[UINavigationController alloc] initWithRootViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"NADDoctorsViewController"]]
                                                          animated:YES];
             [self.sideMenuViewController hideMenuViewController];
             break;
         case 1:
-            [self.sideMenuViewController setContentViewController:[[UINavigationController alloc] initWithRootViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"NADDoctorsViewController"]]
+            [self.sideMenuViewController setContentViewController:[[UINavigationController alloc] initWithRootViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"NADMyRecordsViewController"]]
                                                          animated:YES];
+            [self.sideMenuViewController hideMenuViewController];
+            break;
         case 2:
             [self.sideMenuViewController setContentViewController:[[UINavigationController alloc] initWithRootViewController:[self.storyboard instantiateViewControllerWithIdentifier:@"NADSettingsViewController"]]
                                                          animated:YES];
@@ -91,8 +93,8 @@
         cell.selectedBackgroundView = [[UIView alloc] init];
     }
     
-    NSArray *titles = @[@"Мои записи", @"Врачи", @"Настройки"];
-    NSArray *images = @[@"ico_calendar", @"ico_doctor", @"ico_settings"];
+    NSArray *titles = @[@"Врачи", @"Мои записи", @"Настройки"];
+    NSArray *images = @[@"ico_doctor", @"ico_calendar", @"ico_settings"];
     cell.textLabel.text = titles[indexPath.row];
     cell.imageView.image = [UIImage imageNamed:images[indexPath.row]];
     
