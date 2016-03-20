@@ -149,6 +149,9 @@
                                                     </constraints>
                                                     <inset key="contentEdgeInsets" minX="2" minY="0.0" maxX="2" maxY="0.0"/>
                                                     <state key="normal" title="10:00"/>
+                                                    <connections>
+                                                        <action selector="receptionHourButtonTap:" destination="e90-KJ-4Mj" eventType="touchUpInside" id="2Zc-pR-Y5C"/>
+                                                    </connections>
                                                 </button>
                                                 <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="isu-jt-7o4">
                                                     <rect key="frame" x="59" y="95" width="41" height="30"/>

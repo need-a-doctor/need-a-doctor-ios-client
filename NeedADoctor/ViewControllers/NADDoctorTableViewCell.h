@@ -8,9 +8,18 @@
 
 #import <UIKit/UIKit.h>
 #import "NADDoctorModel.h"
+#import "NADReceptionTime.h"
+
+@protocol DoctorTableViewProtocol <NSObject>
+
+- (void)receptionTimeDidTapped:(NADReceptionTime *)receptionTime;
+
+@end
+
 
 @interface NADDoctorTableViewCell : UITableViewCell
 
 - (void)setupWithDay:(NSDate *)day doctor:(NADDoctorModel *)doctor;
+@property (nonatomic, weak) id<DoctorTableViewProtocol> delegate;
 
 @end

@@ -7,7 +7,6 @@
 //
 
 #import "NADDoctorTableViewCell.h"
-#import "NADReceptionTime.h"
 
 @interface NADDoctorTableViewCell ()
 
@@ -32,21 +31,28 @@
 
 @property (weak, nonatomic) IBOutlet UIButton *moreReceptionHoursButton;
 
+// Day & Doctor models
+@property (nonatomic) NSDate *day;
+@property (nonatomic) NADDoctorModel *doctor;
+
 @end
 
 @implementation NADDoctorTableViewCell
 
 #pragma mark - Setups
 - (void)setupWithDay:(NSDate *)day doctor:(NADDoctorModel *)doctor {
+    self.day = day;
+    self.doctor = doctor;
+    
     // Borders
-    for (UIButton *receptionButton in self.recepientHoursButtons) {
+    for (UIButton *receptionButton in self.receptionHoursButtons) {
         [self setupButtonUI:receptionButton];
         
     }
     [self setupButtonUI:self.moreReceptionHoursButton];
     
     for (int i = 0; i < doctor.receptionTimes.count && i < 5; i++) {
-        UIButton *button = self.recepientHoursButtons[i];
+        UIButton *button = self.receptionHoursButtons[i];
         button.hidden = NO;
         NSDate *receptionTime = [doctor.receptionTimes[i] time];
         NSDateFormatter *formatter = [NSDateFormatter new];
@@ -80,13 +86,22 @@
 }
 
 #pragma mark - Accessors
-- (NSArray *)recepientHoursButtons {
+- (NSArray *)receptionHoursButtons {
     return @[self.recepientHours1,
              self.recepientHours2,
              self.recepientHours3,
              self.recepientHours4,
              self.recepientHours5
              ];
+}
+
+#pragma mark - User interaction
+- (IBAction)receptionHourButtonTap:(UIButton *)sender {
+    NSUInteger index = [self.receptionHoursButtons indexOfObject:sender];
+    NADReceptionTime *receptionTime = self.doctor.receptionTimes[index];
+    if ([self.delegate respondsToSelector:@selector(receptionTimeDidTapped:)]) {
+        [self.delegate receptionTimeDidTapped:receptionTime];
+    }
 }
 
 #pragma mark - Helpers

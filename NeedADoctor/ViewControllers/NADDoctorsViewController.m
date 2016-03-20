@@ -10,7 +10,7 @@
 #import "NADDoctorTableViewCell.h"
 #import "NADDayOfDoctorModel.h"
 
-@interface NADDoctorsViewController () <UITableViewDataSource, UITableViewDelegate>
+@interface NADDoctorsViewController () <UITableViewDataSource, UITableViewDelegate, DoctorTableViewProtocol>
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 
@@ -33,6 +33,11 @@
     NADDoctorModel *doctor = dayOfDoctor.doctors[indexPath.row];
     [cell setupWithDay:dayOfDoctor.date doctor:doctor];
     return cell;
+}
+
+#pragma mark - DoctorTableViewProtocol
+- (void)receptionTimeDidTapped:(NADReceptionTime *)receptionTime {
+    
 }
 
 @end
