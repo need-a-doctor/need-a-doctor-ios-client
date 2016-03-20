@@ -20,6 +20,12 @@
 		0987B6D71C9D658100DE607C /* NADSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0987B6D61C9D658100DE607C /* NADSettingsViewController.m */; };
 		0987B6DA1C9D8AF400DE607C /* NADAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0987B6D91C9D8AF400DE607C /* NADAboutViewController.m */; };
 		09A594B21C9DA42200B8EF0D /* NADSpecializationModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 09A594B11C9DA42200B8EF0D /* NADSpecializationModel.m */; };
+		09A594B51C9E9F2400B8EF0D /* NADDoctorsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09A594B41C9E9F2400B8EF0D /* NADDoctorsViewController.m */; };
+		09A594B81C9EA90800B8EF0D /* NADDoctorTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 09A594B71C9EA90800B8EF0D /* NADDoctorTableViewCell.m */; };
+		09A594BB1C9EAB4900B8EF0D /* NADDoctorModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 09A594BA1C9EAB4900B8EF0D /* NADDoctorModel.m */; };
+		09A594BE1C9EAD3E00B8EF0D /* NADReceptionTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 09A594BD1C9EAD3E00B8EF0D /* NADReceptionTime.m */; };
+		09A594C11C9EB3E700B8EF0D /* NADDayOfDoctorModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 09A594C01C9EB3E700B8EF0D /* NADDayOfDoctorModel.m */; };
+		09A594C61C9EC63C00B8EF0D /* NADClinic.m in Sources */ = {isa = PBXBuildFile; fileRef = 09A594C51C9EC63C00B8EF0D /* NADClinic.m */; };
 		37A33953C9585151AE5B0027 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5944899E5561976B75CCEB83 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -49,6 +55,20 @@
 		0987B6D91C9D8AF400DE607C /* NADAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NADAboutViewController.m; sourceTree = "<group>"; };
 		09A594B01C9DA42200B8EF0D /* NADSpecializationModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NADSpecializationModel.h; sourceTree = "<group>"; };
 		09A594B11C9DA42200B8EF0D /* NADSpecializationModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NADSpecializationModel.m; sourceTree = "<group>"; };
+		09A594B31C9E9F2400B8EF0D /* NADDoctorsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NADDoctorsViewController.h; sourceTree = "<group>"; };
+		09A594B41C9E9F2400B8EF0D /* NADDoctorsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NADDoctorsViewController.m; sourceTree = "<group>"; };
+		09A594B61C9EA90800B8EF0D /* NADDoctorTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NADDoctorTableViewCell.h; sourceTree = "<group>"; };
+		09A594B71C9EA90800B8EF0D /* NADDoctorTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NADDoctorTableViewCell.m; sourceTree = "<group>"; };
+		09A594B91C9EAB4900B8EF0D /* NADDoctorModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NADDoctorModel.h; sourceTree = "<group>"; };
+		09A594BA1C9EAB4900B8EF0D /* NADDoctorModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NADDoctorModel.m; sourceTree = "<group>"; };
+		09A594BC1C9EAD3E00B8EF0D /* NADReceptionTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NADReceptionTime.h; sourceTree = "<group>"; };
+		09A594BD1C9EAD3E00B8EF0D /* NADReceptionTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NADReceptionTime.m; sourceTree = "<group>"; };
+		09A594BF1C9EB3E700B8EF0D /* NADDayOfDoctorModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NADDayOfDoctorModel.h; sourceTree = "<group>"; };
+		09A594C01C9EB3E700B8EF0D /* NADDayOfDoctorModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NADDayOfDoctorModel.m; sourceTree = "<group>"; };
+		09A594C21C9EC01900B8EF0D /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
+		09A594C31C9EC01900B8EF0D /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		09A594C41C9EC63C00B8EF0D /* NADClinic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NADClinic.h; sourceTree = "<group>"; };
+		09A594C51C9EC63C00B8EF0D /* NADClinic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NADClinic.m; sourceTree = "<group>"; };
 		1C7E27EDE5B34CA00FF9EEB9 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		3A327FCD1CB98E41DC76C3E3 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		5944899E5561976B75CCEB83 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -123,6 +143,14 @@
 			children = (
 				09A594B01C9DA42200B8EF0D /* NADSpecializationModel.h */,
 				09A594B11C9DA42200B8EF0D /* NADSpecializationModel.m */,
+				09A594B91C9EAB4900B8EF0D /* NADDoctorModel.h */,
+				09A594BA1C9EAB4900B8EF0D /* NADDoctorModel.m */,
+				09A594BC1C9EAD3E00B8EF0D /* NADReceptionTime.h */,
+				09A594BD1C9EAD3E00B8EF0D /* NADReceptionTime.m */,
+				09A594BF1C9EB3E700B8EF0D /* NADDayOfDoctorModel.h */,
+				09A594C01C9EB3E700B8EF0D /* NADDayOfDoctorModel.m */,
+				09A594C41C9EC63C00B8EF0D /* NADClinic.h */,
+				09A594C51C9EC63C00B8EF0D /* NADClinic.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -149,6 +177,10 @@
 				0987B6D61C9D658100DE607C /* NADSettingsViewController.m */,
 				0987B6D81C9D8AF400DE607C /* NADAboutViewController.h */,
 				0987B6D91C9D8AF400DE607C /* NADAboutViewController.m */,
+				09A594B31C9E9F2400B8EF0D /* NADDoctorsViewController.h */,
+				09A594B41C9E9F2400B8EF0D /* NADDoctorsViewController.m */,
+				09A594B61C9EA90800B8EF0D /* NADDoctorTableViewCell.h */,
+				09A594B71C9EA90800B8EF0D /* NADDoctorTableViewCell.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -318,14 +350,20 @@
 			files = (
 				0987B6D01C9C45FA00DE607C /* NADSpecializationsViewController.m in Sources */,
 				0987B6D71C9D658100DE607C /* NADSettingsViewController.m in Sources */,
+				09A594BB1C9EAB4900B8EF0D /* NADDoctorModel.m in Sources */,
 				09A594B21C9DA42200B8EF0D /* NADSpecializationModel.m in Sources */,
+				09A594BE1C9EAD3E00B8EF0D /* NADReceptionTime.m in Sources */,
 				0987B6CD1C9C45EC00DE607C /* NADMyRecordsViewController.m in Sources */,
 				0987B6CA1C9C44B700DE607C /* NADLeftSideMenuViewController.m in Sources */,
 				09227DA71C9C2DA800F765B8 /* NADAppDelegate.m in Sources */,
 				09227DAC1C9C2E3500F765B8 /* main.m in Sources */,
 				09227DAA1C9C2DB200F765B8 /* NADRootViewController.m in Sources */,
+				09A594C11C9EB3E700B8EF0D /* NADDayOfDoctorModel.m in Sources */,
+				09A594C61C9EC63C00B8EF0D /* NADClinic.m in Sources */,
+				09A594B81C9EA90800B8EF0D /* NADDoctorTableViewCell.m in Sources */,
 				0987B6DA1C9D8AF400DE607C /* NADAboutViewController.m in Sources */,
 				0987B6D41C9D5F8700DE607C /* NADAppDelegate+NADNetwork.m in Sources */,
+				09A594B51C9E9F2400B8EF0D /* NADDoctorsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,6 +374,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				09227D9F1C9C2D0E00F765B8 /* Base */,
+				09A594C31C9EC01900B8EF0D /* ru */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -344,6 +383,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				09227DA11C9C2D0E00F765B8 /* Base */,
+				09A594C21C9EC01900B8EF0D /* ru */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";

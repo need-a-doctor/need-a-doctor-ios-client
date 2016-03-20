@@ -40,7 +40,7 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"SpecializationCell"];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"SpecializationCell" forIndexPath:indexPath];
     cell.textLabel.text = [self.specializations[indexPath.row] name];
     cell.detailTextLabel.text = [self.specializations[indexPath.row] descript];
     return cell;

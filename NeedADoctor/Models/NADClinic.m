@@ -1,20 +1,20 @@
 //
-//  NADSpecializationModel.m
+//  NADClinic.m
 //  NeedADoctor
 //
-//  Created by Dmitry Terekhov on 3/19/16.
+//  Created by Dmitry Terekhov on 3/20/16.
 //  Copyright © 2016 Dmitry Terekhov. All rights reserved.
 //
 
-#import "NADSpecializationModel.h"
+#import "NADClinic.h"
 
-@implementation NADSpecializationModel
+@implementation NADClinic
 
 #pragma mark - Mantle
 + (NSDictionary *)JSONKeyPathsByPropertyKey {
     return @{
              @"name" : @"name",
-             @"descript" : @"description"
+             @"address" : @"address"
              };
 }
 

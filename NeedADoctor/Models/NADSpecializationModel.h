@@ -10,7 +10,6 @@
 
 @interface NADSpecializationModel : MTLModel <MTLJSONSerializing>
 
-@property (nonatomic, readonly) NSString *ID;
 @property (nonatomic, readonly) NSString *name;
 @property (nonatomic, readonly) NSString *descript;
 

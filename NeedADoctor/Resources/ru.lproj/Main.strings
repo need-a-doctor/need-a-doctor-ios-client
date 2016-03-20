@@ -1,0 +1,78 @@
+
+/* Class = "UILabel"; text = "Subtitle"; ObjectID = "0so-BF-Pb6"; */
+"0so-BF-Pb6.text" = "Subtitle";
+
+/* Class = "UILabel"; text = "Чт"; ObjectID = "3IU-NH-Kg8"; */
+"3IU-NH-Kg8.text" = "Чт";
+
+/* Class = "UIButton"; normalTitle = "14:00"; ObjectID = "7Ic-2v-SwH"; */
+"7Ic-2v-SwH.normalTitle" = "14:00";
+
+/* Class = "UINavigationItem"; title = "Специализации"; ObjectID = "9CF-dZ-Ww0"; */
+"9CF-dZ-Ww0.title" = "Специализации";
+
+/* Class = "UILabel"; text = "О приложении"; ObjectID = "COh-ux-lmk"; */
+"COh-ux-lmk.text" = "О приложении";
+
+/* Class = "UILabel"; text = "Иванов А.В."; ObjectID = "E4z-nd-aXr"; */
+"E4z-nd-aXr.text" = "Иванов А.В.";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "MEz-Rh-IEW"; */
+"MEz-Rh-IEW.text" = "Title";
+
+/* Class = "UILabel"; text = "Авторские права © Хочу к врачу, 2016"; ObjectID = "OkC-QO-yb3"; */
+"OkC-QO-yb3.text" = "Авторские права © Хочу к врачу, 2016";
+
+/* Class = "UITableViewSection"; headerTitle = "Сделать мир лучше"; ObjectID = "Peq-Ru-aa7"; */
+"Peq-Ru-aa7.headerTitle" = "Сделать мир лучше";
+
+/* Class = "UILabel"; text = "Только анонимно"; ObjectID = "S30-bv-WoI"; */
+"S30-bv-WoI.text" = "Только анонимно";
+
+/* Class = "UITextView"; text = "Некоторые иконки были использованы с ресурса https://icons8.com"; ObjectID = "Usk-OY-WKV"; */
+"Usk-OY-WKV.text" = "Некоторые иконки были использованы с ресурса https://icons8.com";
+
+/* Class = "UIButton"; normalTitle = "Ещё..."; ObjectID = "WWP-5y-WVM"; */
+"WWP-5y-WVM.normalTitle" = "Ещё...";
+
+/* Class = "UILabel"; text = "Напишите нам"; ObjectID = "by0-PF-WxP"; */
+"by0-PF-WxP.text" = "Напишите нам";
+
+/* Class = "UINavigationItem"; title = "Настройки"; ObjectID = "dEZ-4H-l6n"; */
+"dEZ-4H-l6n.title" = "Настройки";
+
+/* Class = "UIButton"; normalTitle = "12:00"; ObjectID = "ef2-u8-KZz"; */
+"ef2-u8-KZz.normalTitle" = "12:00";
+
+/* Class = "UIButton"; normalTitle = "13:00"; ObjectID = "fEN-Fk-DW0"; */
+"fEN-Fk-DW0.normalTitle" = "13:00";
+
+/* Class = "UILabel"; text = "29"; ObjectID = "i6L-sw-l7h"; */
+"i6L-sw-l7h.text" = "29";
+
+/* Class = "UIButton"; normalTitle = "11:00"; ObjectID = "isu-jt-7o4"; */
+"isu-jt-7o4.normalTitle" = "11:00";
+
+/* Class = "UILabel"; text = "Областная больница"; ObjectID = "kxN-7u-Pfm"; */
+"kxN-7u-Pfm.text" = "Областная больница";
+
+/* Class = "UILabel"; text = "ул. Московский пр., 65"; ObjectID = "lTd-ex-CBY"; */
+"lTd-ex-CBY.text" = "ул. Московский пр., 65";
+
+/* Class = "UIButton"; normalTitle = "10:00"; ObjectID = "pwk-tB-vaJ"; */
+"pwk-tB-vaJ.normalTitle" = "10:00";
+
+/* Class = "UILabel"; text = "Хочу к врачу"; ObjectID = "rJi-fE-ZIZ"; */
+"rJi-fE-ZIZ.text" = "Хочу к врачу";
+
+/* Class = "UINavigationItem"; title = "Мои записи"; ObjectID = "s57-yb-8R7"; */
+"s57-yb-8R7.title" = "Мои записи";
+
+/* Class = "UILabel"; text = "Статистика использования"; ObjectID = "sA4-OX-d8A"; */
+"sA4-OX-d8A.text" = "Статистика использования";
+
+/* Class = "UITableViewSection"; headerTitle = "Поддержка"; ObjectID = "sfd-fI-rXr"; */
+"sfd-fI-rXr.headerTitle" = "Поддержка";
+
+/* Class = "UILabel"; text = "Апрель"; ObjectID = "wuX-oR-EK0"; */
+"wuX-oR-EK0.text" = "Апрель";

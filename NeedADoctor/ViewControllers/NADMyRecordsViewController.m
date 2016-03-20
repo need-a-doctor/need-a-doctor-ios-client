@@ -14,6 +14,12 @@
 
 @implementation NADMyRecordsViewController
 
-
+//- (void)viewDidLoad {
+//    [super viewDidLoad];
+//    
+//    int monthNumber = 11;
+//    NSDateFormatter *df = [NSDateFormatter new];
+//    NSString *monthName = df.monthSymbols[monthNumber - 1];
+//}
 
 @end
