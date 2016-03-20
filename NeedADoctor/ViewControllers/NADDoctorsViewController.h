@@ -9,4 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface NADDoctorsViewController : UIViewController
+
+@property (nonatomic) NSArray *daysOfDoctors;
+
 @end

@@ -37,12 +37,23 @@
     // Date
     self.numberLabel.text = @(components.day).stringValue;
     self.mounthLabel.text = formatter.monthSymbols[components.month - 1];
-    self.weekdayLabel.text = formatter.weekdaySymbols[components.weekday - 1];
+    self.weekdayLabel.text = [self weekdaysDict][@(components.weekday)];
     
     // Hospital & Doctor
     self.clinicNameLabel.text = doctor.clinic.name;
     self.clinicAddressLabel.text = doctor.clinic.address;
     self.doctorNameLabel.text = doctor.name;
+}
+
+#pragma mark - Helpers
+- (NSDictionary *)weekdaysDict {
+    return @{ @(1) : @"Вс",
+              @(2) : @"Пн",
+              @(3) : @"Вт",
+              @(4) : @"Ср",
+              @(5) : @"Чт",
+              @(6) : @"Пт",
+              @(7) : @"Сб"};
 }
 
 @end

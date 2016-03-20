@@ -17,7 +17,8 @@
     return @{
              @"name" : @"name",
              @"specializations" : @"specializations",
-             @"receptionTimes" : @"receptions"
+             @"receptionTimes" : @"receptions",
+             @"clinic" : @"clinic"
              };
 }
 

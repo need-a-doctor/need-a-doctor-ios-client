@@ -88,9 +88,6 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="L7T-2v-kcs" kind="show" id="bE8-WT-CHn"/>
-                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -115,6 +112,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="sCJ-Cc-xef" id="53U-Su-83F"/>
+                        <segue destination="L7T-2v-kcs" kind="show" identifier="showDoctorsVC" id="aIX-Ap-Moz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u0R-MZ-JBy" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -446,7 +444,7 @@
                     <nil name="viewControllers"/>
                     <connections>
                         <segue destination="I0t-BA-uCB" kind="relationship" relationship="rootViewController" id="Yrp-7G-MhD"/>
-                        <segue destination="QUU-GA-gcU" kind="show" identifier="showDoctorsVC" id="Ojv-9I-kf5"/>
+                        <segue destination="QUU-GA-gcU" kind="show" identifier="showSpecializationsVC" id="Ojv-9I-kf5"/>
                         <segue destination="jPy-k3-Gzc" kind="show" identifier="showSettingsVC" id="pDc-gg-lT3"/>
                     </connections>
                 </navigationController>

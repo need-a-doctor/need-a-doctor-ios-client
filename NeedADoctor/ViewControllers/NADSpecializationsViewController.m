@@ -8,6 +8,10 @@
 
 #import "NADSpecializationsViewController.h"
 #import "NADSpecializationModel.h"
+#import "NADDayOfDoctorModel.h"
+#import "NADDoctorsViewController.h"
+
+static NSString *const ShowDoctorsVCSegue = @"showDoctorsVC";
 
 @interface NADSpecializationsViewController () <UITableViewDataSource, UITableViewDelegate>
 
@@ -44,6 +48,29 @@
     cell.textLabel.text = [self.specializations[indexPath.row] name];
     cell.detailTextLabel.text = [self.specializations[indexPath.row] descript];
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [MBProgressHUD showHUDAddedTo:self.view animated:YES];
+    NSString *URLEndpoint = @"doctors/grouped-by-date";
+    
+    [App().networkManager GET:URLEndpoint parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nonnull responseObject) {
+        [MBProgressHUD hideHUDForView:self.view animated:YES];
+        NSArray *daysOfDoctors = [MTLJSONAdapter modelsOfClass:NADDayOfDoctorModel.class fromJSONArray:responseObject error:nil];
+        
+        [self performSegueWithIdentifier:ShowDoctorsVCSegue sender:daysOfDoctors];
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        [MBProgressHUD hideHUDForView:self.view animated:YES];
+    }];
+}
+
+#pragma mark - Storyboard
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.identifier isEqualToString:ShowDoctorsVCSegue]) {
+        NSArray *daysOfDoctors = sender;
+        NADDoctorsViewController *doctorsVC = segue.destinationViewController;
+        doctorsVC.daysOfDoctors = daysOfDoctors;
+    }
 }
 
 @end

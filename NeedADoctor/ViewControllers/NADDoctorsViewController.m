@@ -7,23 +7,31 @@
 //
 
 #import "NADDoctorsViewController.h"
+#import "NADDoctorTableViewCell.h"
+#import "NADDayOfDoctorModel.h"
 
 @interface NADDoctorsViewController () <UITableViewDataSource, UITableViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
-@property (nonatomic) NSArray *daysOfDoctors;
 
 @end
 
 @implementation NADDoctorsViewController
 
 #pragma mark - UITableViewDataSource
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return self.daysOfDoctors.count;
+}
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 3;
+    return [self.daysOfDoctors[section] doctors].count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"DoctorCell" forIndexPath:indexPath];
+    NADDoctorTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"DoctorCell" forIndexPath:indexPath];
+    NADDayOfDoctorModel *dayOfDoctor = self.daysOfDoctors[indexPath.section];
+    NADDoctorModel *doctor = dayOfDoctor.doctors[indexPath.row];
+    [cell setupWithDay:dayOfDoctor.date doctor:doctor];
     return cell;
 }
 
