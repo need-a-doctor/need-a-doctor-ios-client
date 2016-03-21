@@ -10,7 +10,7 @@
 #import "NADDoctorModel.h"
 #import "NADReceptionTime.h"
 
-@protocol DoctorTableViewProtocol <NSObject>
+@protocol NADDoctorTableViewProtocol <NSObject>
 
 - (void)receptionTimeDidTapped:(NADReceptionTime *)receptionTime;
 
@@ -19,7 +19,6 @@
 
 @interface NADDoctorTableViewCell : UITableViewCell
 
-- (void)setupWithDay:(NSDate *)day doctor:(NADDoctorModel *)doctor;
-@property (nonatomic, weak) id<DoctorTableViewProtocol> delegate;
+- (void)setupWithDay:(NSDate *)day doctor:(NADDoctorModel *)doctor delegate:(id<NADDoctorTableViewProtocol>)delegate;
 
 @end

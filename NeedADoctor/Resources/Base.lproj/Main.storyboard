@@ -233,7 +233,7 @@
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WWP-5y-WVM">
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WWP-5y-WVM">
                                                     <rect key="frame" x="261" y="95.5" width="47" height="40"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="40" id="Ipv-QG-xrA"/>
@@ -459,7 +459,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ваши имя и фамилия" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LN6-de-fsH">
-                                <rect key="frame" x="46" y="191" width="508" height="30"/>
+                                <rect key="frame" x="46" y="191" width="546" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="done"/>
                             </textField>
@@ -478,7 +478,7 @@
                                 </constraints>
                             </imageView>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Номер телефона" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="e15-90-cKz">
-                                <rect key="frame" x="46" y="239" width="508" height="30"/>
+                                <rect key="frame" x="46" y="239" width="546" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" returnKeyType="done"/>
                             </textField>
@@ -494,9 +494,9 @@
                             <constraint firstItem="LN6-de-fsH" firstAttribute="centerY" secondItem="iHy-Bb-X1n" secondAttribute="centerY" id="Y3u-GD-uhS"/>
                             <constraint firstItem="gO5-oj-Keb" firstAttribute="top" secondItem="JG4-qB-Vf7" secondAttribute="bottom" constant="8.5" id="aAL-iH-VuR"/>
                             <constraint firstItem="5gK-ci-cWH" firstAttribute="top" secondItem="sD6-k7-2Nu" secondAttribute="bottom" constant="24" id="acn-Yn-m7M"/>
-                            <constraint firstAttribute="trailing" secondItem="LN6-de-fsH" secondAttribute="trailing" constant="46" id="b7b-sy-dj5"/>
+                            <constraint firstAttribute="trailing" secondItem="LN6-de-fsH" secondAttribute="trailing" constant="8" id="b7b-sy-dj5"/>
                             <constraint firstItem="iHy-Bb-X1n" firstAttribute="leading" secondItem="KzY-V9-IyJ" secondAttribute="leading" constant="8" id="bZq-dK-aei"/>
-                            <constraint firstAttribute="trailing" secondItem="e15-90-cKz" secondAttribute="trailing" constant="46" id="hhR-pj-WXs"/>
+                            <constraint firstAttribute="trailing" secondItem="e15-90-cKz" secondAttribute="trailing" constant="8" id="hhR-pj-WXs"/>
                             <constraint firstItem="571-uJ-sPb" firstAttribute="leading" secondItem="JG4-qB-Vf7" secondAttribute="trailing" constant="8" id="ioc-86-UjG"/>
                             <constraint firstItem="e15-90-cKz" firstAttribute="centerY" secondItem="uCc-J6-0y6" secondAttribute="centerY" id="jjc-Tr-UiQ"/>
                             <constraint firstItem="e15-90-cKz" firstAttribute="leading" secondItem="uCc-J6-0y6" secondAttribute="trailing" constant="8" id="nLK-VF-b9M"/>

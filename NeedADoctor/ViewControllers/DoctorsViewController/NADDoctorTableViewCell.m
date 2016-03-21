@@ -33,14 +33,17 @@
 @property (nonatomic) NSDate *day;
 @property (nonatomic) NADDoctorModel *doctor;
 
+@property (nonatomic, weak) id<NADDoctorTableViewProtocol> delegate;
+
 @end
 
 @implementation NADDoctorTableViewCell
 
 #pragma mark - Setups
-- (void)setupWithDay:(NSDate *)day doctor:(NADDoctorModel *)doctor {
+- (void)setupWithDay:(NSDate *)day doctor:(NADDoctorModel *)doctor delegate:(id<NADDoctorTableViewProtocol>)delegate {
     self.day = day;
     self.doctor = doctor;
+    self.delegate = delegate;
     
     // Borders
     for (UIButton *receptionButton in self.receptionTimeButtons) {

@@ -10,7 +10,9 @@
 #import "NADDoctorTableViewCell.h"
 #import "NADDayOfDoctorModel.h"
 
-@interface NADDoctorsViewController () <UITableViewDataSource, UITableViewDelegate, DoctorTableViewProtocol>
+static NSString *const ShowAuthVCSegue = @"showAuthVC";
+
+@interface NADDoctorsViewController () <UITableViewDataSource, UITableViewDelegate, NADDoctorTableViewProtocol>
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 
@@ -31,13 +33,13 @@
     NADDoctorTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"DoctorCell" forIndexPath:indexPath];
     NADDayOfDoctorModel *dayOfDoctor = self.daysOfDoctors[indexPath.section];
     NADDoctorModel *doctor = dayOfDoctor.doctors[indexPath.row];
-    [cell setupWithDay:dayOfDoctor.date doctor:doctor];
+    [cell setupWithDay:dayOfDoctor.date doctor:doctor delegate:self];
     return cell;
 }
 
 #pragma mark - DoctorTableViewProtocol
 - (void)receptionTimeDidTapped:(NADReceptionTime *)receptionTime {
-    
+    [self performSegueWithIdentifier:ShowAuthVCSegue sender:self];
 }
 
 @end
