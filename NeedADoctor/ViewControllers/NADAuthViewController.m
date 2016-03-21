@@ -9,6 +9,11 @@
 #import "NADAuthViewController.h"
 
 @interface NADAuthViewController () <UITextFieldDelegate>
+
+@property (weak, nonatomic) IBOutlet UILabel *dateLabel;
+@property (weak, nonatomic) IBOutlet UILabel *timeLabel;
+@property (weak, nonatomic) IBOutlet UILabel *doctorNameLabel;
+
 @end
 
 @implementation NADAuthViewController

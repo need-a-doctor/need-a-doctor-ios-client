@@ -142,8 +142,8 @@
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="143.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pwk-tB-vaJ">
-                                                    <rect key="frame" x="4" y="95.5" width="47" height="40"/>
+                                                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pwk-tB-vaJ">
+                                                    <rect key="frame" x="4" y="95" width="47" height="40"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="40" id="EGr-Ub-AME"/>
                                                     </constraints>
@@ -153,8 +153,8 @@
                                                         <action selector="receptionTimeButtonTap:" destination="e90-KJ-4Mj" eventType="touchUpInside" id="BAV-uh-pLr"/>
                                                     </connections>
                                                 </button>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="isu-jt-7o4">
-                                                    <rect key="frame" x="55" y="95.5" width="45" height="40"/>
+                                                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="isu-jt-7o4">
+                                                    <rect key="frame" x="55" y="95" width="45" height="40"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="40" id="E6f-nN-gFq"/>
                                                     </constraints>
@@ -164,8 +164,8 @@
                                                         <action selector="receptionTimeButtonTap:" destination="e90-KJ-4Mj" eventType="touchUpInside" id="teX-Kr-FpU"/>
                                                     </connections>
                                                 </button>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ef2-u8-KZz">
-                                                    <rect key="frame" x="104" y="95.5" width="47" height="40"/>
+                                                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ef2-u8-KZz">
+                                                    <rect key="frame" x="104" y="95" width="47" height="40"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="40" id="8Of-nm-2iq"/>
                                                     </constraints>
@@ -175,8 +175,8 @@
                                                         <action selector="receptionTimeButtonTap:" destination="e90-KJ-4Mj" eventType="touchUpInside" id="RjO-yf-Ft9"/>
                                                     </connections>
                                                 </button>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fEN-Fk-DW0">
-                                                    <rect key="frame" x="155" y="95.5" width="47" height="40"/>
+                                                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fEN-Fk-DW0">
+                                                    <rect key="frame" x="155" y="95" width="47" height="40"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="40" id="vPE-E7-7ao"/>
                                                     </constraints>
@@ -186,8 +186,8 @@
                                                         <action selector="receptionTimeButtonTap:" destination="e90-KJ-4Mj" eventType="touchUpInside" id="Z9s-up-dZN"/>
                                                     </connections>
                                                 </button>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Ic-2v-SwH">
-                                                    <rect key="frame" x="206" y="95.5" width="47" height="40"/>
+                                                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Ic-2v-SwH">
+                                                    <rect key="frame" x="206" y="95" width="47" height="40"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="40" id="zQH-ql-pdd"/>
                                                     </constraints>
@@ -197,8 +197,16 @@
                                                         <action selector="receptionTimeButtonTap:" destination="e90-KJ-4Mj" eventType="touchUpInside" id="QSe-z3-kvW"/>
                                                     </connections>
                                                 </button>
+                                                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WWP-5y-WVM">
+                                                    <rect key="frame" x="257" y="95" width="51" height="40"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="40" id="Ipv-QG-xrA"/>
+                                                    </constraints>
+                                                    <inset key="contentEdgeInsets" minX="4" minY="0.0" maxX="4" maxY="0.0"/>
+                                                    <state key="normal" title="Ещё..."/>
+                                                </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="29" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i6L-sw-l7h">
-                                                    <rect key="frame" x="25.5" y="8" width="22" height="20.5"/>
+                                                    <rect key="frame" x="25" y="8" width="22" height="20.5"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
@@ -210,37 +218,29 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Чт" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3IU-NH-Kg8">
-                                                    <rect key="frame" x="26.5" y="65.5" width="20" height="20.5"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <rect key="frame" x="26" y="66" width="21" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Областная больница" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kxN-7u-Pfm">
-                                                    <rect key="frame" x="81.5" y="8" width="510.5" height="20.5"/>
+                                                    <rect key="frame" x="81" y="8" width="510.5" height="20.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="ул. Московский пр., 65" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lTd-ex-CBY">
-                                                    <rect key="frame" x="81.5" y="37" width="510.5" height="20.5"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <rect key="frame" x="81" y="37" width="510.5" height="16"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Через-заборо-ногу-задирищенко Александр Викторович" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E4z-nd-aXr">
-                                                    <rect key="frame" x="81.5" y="66" width="510.5" height="20.5"/>
+                                                    <rect key="frame" x="81" y="61" width="510.5" height="20.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WWP-5y-WVM">
-                                                    <rect key="frame" x="257" y="95.5" width="51" height="40"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="40" id="Ipv-QG-xrA"/>
-                                                    </constraints>
-                                                    <inset key="contentEdgeInsets" minX="4" minY="0.0" maxX="4" maxY="0.0"/>
-                                                    <state key="normal" title="Ещё..."/>
-                                                </button>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="wuX-oR-EK0" firstAttribute="top" secondItem="i6L-sw-l7h" secondAttribute="bottom" constant="8.5" id="4yf-8y-xNG"/>
@@ -455,7 +455,7 @@
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Через-заборо-ногу-задирищенко Александр Викторович" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f08-Wi-RpH">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Через-заборо-ногу-задирищенко Александр Викторович" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f08-Wi-RpH">
                                         <rect key="frame" x="64" y="82" width="465.5" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -503,15 +503,15 @@
                                     <constraint firstItem="F39-lo-wn7" firstAttribute="baseline" secondItem="5gK-ci-cWH" secondAttribute="baseline" id="EIz-Qr-Dxx"/>
                                     <constraint firstItem="5gK-ci-cWH" firstAttribute="leading" secondItem="05x-I7-cm9" secondAttribute="leading" constant="8" id="Ecl-3K-Yst"/>
                                     <constraint firstAttribute="trailing" secondItem="LN6-de-fsH" secondAttribute="trailing" constant="8" id="FKR-Hb-ZJk"/>
-                                    <constraint firstItem="f08-Wi-RpH" firstAttribute="baseline" secondItem="gO5-oj-Keb" secondAttribute="baseline" id="HPP-rI-PKI"/>
                                     <constraint firstAttribute="bottom" secondItem="uCc-J6-0y6" secondAttribute="bottom" constant="333" id="RLk-AQ-uhn"/>
                                     <constraint firstItem="571-uJ-sPb" firstAttribute="baseline" secondItem="JG4-qB-Vf7" secondAttribute="baseline" id="VxG-dt-dkp"/>
                                     <constraint firstItem="JG4-qB-Vf7" firstAttribute="top" secondItem="5gK-ci-cWH" secondAttribute="bottom" constant="8.5" id="Yd2-nd-CgS"/>
-                                    <constraint firstItem="f08-Wi-RpH" firstAttribute="leading" secondItem="gO5-oj-Keb" secondAttribute="trailing" constant="8" id="bvi-Uv-fJK"/>
                                     <constraint firstItem="LN6-de-fsH" firstAttribute="centerY" secondItem="iHy-Bb-X1n" secondAttribute="centerY" id="jmx-Le-oRR"/>
                                     <constraint firstItem="F39-lo-wn7" firstAttribute="leading" secondItem="5gK-ci-cWH" secondAttribute="trailing" constant="7.5" id="mKK-xm-NCT"/>
                                     <constraint firstItem="gO5-oj-Keb" firstAttribute="leading" secondItem="05x-I7-cm9" secondAttribute="leading" constant="8" id="nP8-Oa-sHm"/>
+                                    <constraint firstItem="f08-Wi-RpH" firstAttribute="leading" secondItem="gO5-oj-Keb" secondAttribute="trailing" constant="8" id="oYl-km-0Da"/>
                                     <constraint firstItem="e15-90-cKz" firstAttribute="centerY" secondItem="uCc-J6-0y6" secondAttribute="centerY" id="qeu-rJ-P21"/>
+                                    <constraint firstItem="f08-Wi-RpH" firstAttribute="centerY" secondItem="gO5-oj-Keb" secondAttribute="centerY" id="rJ4-az-Nmh"/>
                                     <constraint firstItem="iHy-Bb-X1n" firstAttribute="top" secondItem="gO5-oj-Keb" secondAttribute="bottom" constant="24.5" id="rLg-Ob-d6t"/>
                                     <constraint firstItem="uCc-J6-0y6" firstAttribute="leading" secondItem="05x-I7-cm9" secondAttribute="leading" constant="8" id="sxN-nu-bAG"/>
                                     <constraint firstItem="LN6-de-fsH" firstAttribute="leading" secondItem="iHy-Bb-X1n" secondAttribute="trailing" constant="8" id="t4L-Ld-QDq"/>
@@ -539,6 +539,11 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="dateLabel" destination="F39-lo-wn7" id="RSb-HV-ud0"/>
+                        <outlet property="doctorNameLabel" destination="f08-Wi-RpH" id="FhL-1n-IpT"/>
+                        <outlet property="timeLabel" destination="571-uJ-sPb" id="EBO-nn-fDD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OkP-AT-n9M" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
