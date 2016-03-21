@@ -11,7 +11,7 @@
 @interface NADReceptionTime : MTLModel <MTLJSONSerializing>
 
 @property (nonatomic, readonly) NSDate *time;
-@property (nonatomic, readonly) BOOL isBusy;
-@property (nonatomic, readonly) BOOL isCurrentUser;
+@property (nonatomic) BOOL isBusy;
+@property (nonatomic) BOOL isCurrentUser;
 
 @end

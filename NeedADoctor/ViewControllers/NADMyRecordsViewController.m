@@ -8,18 +8,22 @@
 
 #import "NADMyRecordsViewController.h"
 
-@interface NADMyRecordsViewController ()
+@interface NADMyRecordsViewController () <UITableViewDataSource, UITableViewDelegate>
+
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 @end
 
 @implementation NADMyRecordsViewController
 
-//- (void)viewDidLoad {
-//    [super viewDidLoad];
-//    
-//    int monthNumber = 11;
-//    NSDateFormatter *df = [NSDateFormatter new];
-//    NSString *monthName = df.monthSymbols[monthNumber - 1];
-//}
+#pragma mark - UITalbeViewDataSource
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return 1;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:@"MyRecordCell" forIndexPath:indexPath];
+    return cell;
+}
 
 @end

@@ -12,7 +12,8 @@
 
 @protocol NADDoctorTableViewProtocol <NSObject>
 
-- (void)receptionTimeDidTapped:(NADReceptionTime *)receptionTime;
+- (void)doctorCellDidTapped:(UITableViewCell *)cell doctor:(NADDoctorModel *)doctor day:(NSDate *)day;
+- (void)currentUserDidRecorded;
 
 @end
 

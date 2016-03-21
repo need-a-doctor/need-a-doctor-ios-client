@@ -7,6 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "NADDoctorModel.h"
+#import "NADDoctorTableViewCell.h"
 
 @interface NADAuthViewController : UIViewController
+
+- (void)setupWithDay:(NSDate *)day doctor:(NADDoctorModel *)doctor delegate:(id<NADDoctorTableViewProtocol>)delegate;
+
 @end

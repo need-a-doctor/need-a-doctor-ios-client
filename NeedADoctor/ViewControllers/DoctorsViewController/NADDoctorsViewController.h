@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "NADSpecializationModel.h"
 
 @interface NADDoctorsViewController : UIViewController
 
 @property (nonatomic) NSArray *daysOfDoctors;
+@property (nonatomic) NADSpecializationModel *specialization;
 
 @end

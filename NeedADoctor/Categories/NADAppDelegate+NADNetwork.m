@@ -9,7 +9,7 @@
 #import "NADAppDelegate+NADNetwork.h"
 #import <objc/runtime.h>
 
-static NSString *const ServiceBaseURL = @"http://50.112.191.195:9000/api";
+static NSString *const ServiceBaseURL = @"http://52.38.21.188:9000/api";
 static NSTimeInterval const Timeout = 120;
 
 @implementation NADAppDelegate (NADNetwork)

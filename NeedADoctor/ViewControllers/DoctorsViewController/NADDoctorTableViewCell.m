@@ -51,8 +51,8 @@ static NSUInteger const ReceptionTimeInCellLimit = 5;
         UIButton *button = self.receptionTimeButtons[i];
         NADReceptionTime *receptionTime = doctor.receptionTimes[i];
         
-        [self setupButtonUI:button receptionTime:receptionTime];
         button.hidden = NO;
+        [self setupButtonUI:button receptionTime:receptionTime];
         NSDate *receptionTimeDate = receptionTime.time;
         NSDateFormatter *formatter = [NSDateFormatter new];
         [formatter setDateFormat:@"HH:mm"];
@@ -82,20 +82,21 @@ static NSUInteger const ReceptionTimeInCellLimit = 5;
     CGFloat fontSize = 15.0;
     if (receptionTime) {
         if (receptionTime.isBusy && receptionTime.isCurrentUser) {
-            borderColor = [UIColor blueColor];
+            borderColor = [UIColor colorWithRed:0.13 green:0.59 blue:0.95 alpha:1];
             button.titleLabel.font = [UIFont boldSystemFontOfSize:fontSize];
+            button.userInteractionEnabled = NO;
         } else if (receptionTime.isBusy) {
             borderColor = [UIColor lightGrayColor];
+            button.userInteractionEnabled = NO;
         } else {
-            borderColor = [UIColor greenColor];
+            borderColor = [UIColor colorWithRed:0.61 green:0.79 blue:0.36 alpha:1];
+            button.userInteractionEnabled = YES;
         }
         button.titleLabel.font = [UIFont systemFontOfSize:fontSize];
     }
     
-    button.layer.borderWidth = 1.0;
-    button.layer.borderColor = borderColor.CGColor;
+    button.backgroundColor = borderColor;
     button.layer.cornerRadius = 5.0;
-    [button setTitleColor:borderColor forState:UIControlStateNormal];
 }
 
 #pragma mark - Accessors
@@ -112,8 +113,10 @@ static NSUInteger const ReceptionTimeInCellLimit = 5;
 - (IBAction)receptionTimeButtonTap:(UIButton *)sender {
     NSUInteger index = [self.receptionTimeButtons indexOfObject:sender];
     NADReceptionTime *receptionTime = self.doctor.receptionTimes[index];
-    if ([self.delegate respondsToSelector:@selector(receptionTimeDidTapped:)]) {
-        [self.delegate receptionTimeDidTapped:receptionTime];
+    receptionTime.isBusy = YES;
+    receptionTime.isCurrentUser = YES;
+    if ([self.delegate respondsToSelector:@selector(doctorCellDidTapped:doctor:day:)]) {
+        [self.delegate doctorCellDidTapped:self doctor:self.doctor day:self.day];
     }
 }
 

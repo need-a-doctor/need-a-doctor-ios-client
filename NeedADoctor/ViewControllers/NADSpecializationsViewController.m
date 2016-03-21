@@ -17,6 +17,7 @@ static NSString *const ShowDoctorsVCSegue = @"showDoctorsVC";
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (nonatomic) NSArray *specializations;
+@property (nonatomic) NADSpecializationModel *selectedSpecialization;
 
 @end
 
@@ -58,6 +59,7 @@ static NSString *const ShowDoctorsVCSegue = @"showDoctorsVC";
         [MBProgressHUD hideHUDForView:self.view animated:YES];
         NSArray *daysOfDoctors = [MTLJSONAdapter modelsOfClass:NADDayOfDoctorModel.class fromJSONArray:responseObject error:nil];
         
+        self.selectedSpecialization = self.specializations[indexPath.row];
         [self performSegueWithIdentifier:ShowDoctorsVCSegue sender:daysOfDoctors];
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         [MBProgressHUD hideHUDForView:self.view animated:YES];
@@ -70,6 +72,7 @@ static NSString *const ShowDoctorsVCSegue = @"showDoctorsVC";
         NSArray *daysOfDoctors = sender;
         NADDoctorsViewController *doctorsVC = segue.destinationViewController;
         doctorsVC.daysOfDoctors = daysOfDoctors;
+        doctorsVC.specialization = self.selectedSpecialization;
     }
 }
 
