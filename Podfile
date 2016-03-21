@@ -7,6 +7,7 @@ inhibit_all_warnings! # this will disable all the warnings for all pods
 pod 'AFNetworking'
 pod 'Mantle'
 pod 'RESideMenu'
+pod 'TPKeyboardAvoiding'
 pod 'DTerekhovKit'
 
 # For Crashlytics service

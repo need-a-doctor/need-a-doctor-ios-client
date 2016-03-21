@@ -8,8 +8,7 @@
 
 #import "NADAuthViewController.h"
 
-@interface NADAuthViewController ()
-
+@interface NADAuthViewController () <UITextFieldDelegate>
 @end
 
 @implementation NADAuthViewController
@@ -23,6 +22,13 @@
     
     // TODO: HIGHLIGHT RECEPTION TIME
     
+}
+
+#pragma mark - UITextFieldDelegate
+// Hide keyboard for every UITextField by button Done tap
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+    [textField resignFirstResponder];
+    return NO;
 }
 
 @end
