@@ -131,21 +131,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" indicatorStyle="black" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="134" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="mDG-xD-IIE">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" indicatorStyle="black" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="144" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="mDG-xD-IIE">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="DoctorCell" id="e90-KJ-4Mj" customClass="NADDoctorTableViewCell">
-                                        <rect key="frame" x="0.0" y="92" width="600" height="134"/>
+                                        <rect key="frame" x="0.0" y="92" width="600" height="144"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="e90-KJ-4Mj" id="w8d-cB-6sk">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="133.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="143.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pwk-tB-vaJ">
-                                                    <rect key="frame" x="8" y="95" width="43" height="30"/>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pwk-tB-vaJ">
+                                                    <rect key="frame" x="8" y="95.5" width="43" height="40"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="30" id="EGr-Ub-AME"/>
+                                                        <constraint firstAttribute="height" constant="40" id="EGr-Ub-AME"/>
                                                     </constraints>
                                                     <inset key="contentEdgeInsets" minX="2" minY="0.0" maxX="2" maxY="0.0"/>
                                                     <state key="normal" title="10:00"/>
@@ -153,10 +153,10 @@
                                                         <action selector="receptionTimeButtonTap:" destination="e90-KJ-4Mj" eventType="touchUpInside" id="BAV-uh-pLr"/>
                                                     </connections>
                                                 </button>
-                                                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="isu-jt-7o4">
-                                                    <rect key="frame" x="59" y="95" width="41" height="30"/>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="isu-jt-7o4">
+                                                    <rect key="frame" x="59" y="95.5" width="41" height="40"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="30" id="E6f-nN-gFq"/>
+                                                        <constraint firstAttribute="height" constant="40" id="E6f-nN-gFq"/>
                                                     </constraints>
                                                     <inset key="contentEdgeInsets" minX="2" minY="0.0" maxX="2" maxY="0.0"/>
                                                     <state key="normal" title="11:00"/>
@@ -164,10 +164,10 @@
                                                         <action selector="receptionTimeButtonTap:" destination="e90-KJ-4Mj" eventType="touchUpInside" id="teX-Kr-FpU"/>
                                                     </connections>
                                                 </button>
-                                                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ef2-u8-KZz">
-                                                    <rect key="frame" x="108" y="95" width="43" height="30"/>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ef2-u8-KZz">
+                                                    <rect key="frame" x="108" y="95.5" width="43" height="40"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="30" id="8Of-nm-2iq"/>
+                                                        <constraint firstAttribute="height" constant="40" id="8Of-nm-2iq"/>
                                                     </constraints>
                                                     <inset key="contentEdgeInsets" minX="2" minY="0.0" maxX="2" maxY="0.0"/>
                                                     <state key="normal" title="12:00"/>
@@ -175,10 +175,10 @@
                                                         <action selector="receptionTimeButtonTap:" destination="e90-KJ-4Mj" eventType="touchUpInside" id="RjO-yf-Ft9"/>
                                                     </connections>
                                                 </button>
-                                                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fEN-Fk-DW0">
-                                                    <rect key="frame" x="159" y="95" width="43" height="30"/>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fEN-Fk-DW0">
+                                                    <rect key="frame" x="159" y="95.5" width="43" height="40"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="30" id="vPE-E7-7ao"/>
+                                                        <constraint firstAttribute="height" constant="40" id="vPE-E7-7ao"/>
                                                     </constraints>
                                                     <inset key="contentEdgeInsets" minX="2" minY="0.0" maxX="2" maxY="0.0"/>
                                                     <state key="normal" title="13:00"/>
@@ -186,10 +186,10 @@
                                                         <action selector="receptionTimeButtonTap:" destination="e90-KJ-4Mj" eventType="touchUpInside" id="Z9s-up-dZN"/>
                                                     </connections>
                                                 </button>
-                                                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Ic-2v-SwH">
-                                                    <rect key="frame" x="210" y="95" width="43" height="30"/>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Ic-2v-SwH">
+                                                    <rect key="frame" x="210" y="95.5" width="43" height="40"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="30" id="zQH-ql-pdd"/>
+                                                        <constraint firstAttribute="height" constant="40" id="zQH-ql-pdd"/>
                                                     </constraints>
                                                     <inset key="contentEdgeInsets" minX="2" minY="0.0" maxX="2" maxY="0.0"/>
                                                     <state key="normal" title="14:00"/>
@@ -228,15 +228,15 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Через-заборо-ногу-задирищенко Александр Викторович" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E4z-nd-aXr">
-                                                    <rect key="frame" x="81.5" y="66" width="510.5" height="21"/>
+                                                    <rect key="frame" x="81.5" y="66" width="510.5" height="20.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WWP-5y-WVM">
-                                                    <rect key="frame" x="261" y="95" width="47" height="30"/>
+                                                    <rect key="frame" x="261" y="95.5" width="47" height="40"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="30" id="Ipv-QG-xrA"/>
+                                                        <constraint firstAttribute="height" constant="40" id="Ipv-QG-xrA"/>
                                                     </constraints>
                                                     <inset key="contentEdgeInsets" minX="2" minY="0.0" maxX="2" maxY="0.0"/>
                                                     <state key="normal" title="Ещё..."/>

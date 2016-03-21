@@ -62,7 +62,7 @@
         self.moreReceptionTime.hidden = NO;
     }
     
-    NSDateComponents *components = [[NSCalendar currentCalendar] components:NSCalendarUnitYear|NSCalendarUnitMonth|NSCalendarUnitDay fromDate:day];
+    NSDateComponents *components = [[NSCalendar currentCalendar] components:NSCalendarUnitMonth|NSCalendarUnitDay|NSCalendarUnitWeekday fromDate:day];
     NSDateFormatter *formatter = [NSDateFormatter new];
     
     // Date
