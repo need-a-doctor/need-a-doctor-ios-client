@@ -150,7 +150,7 @@
                                                     <inset key="contentEdgeInsets" minX="2" minY="0.0" maxX="2" maxY="0.0"/>
                                                     <state key="normal" title="10:00"/>
                                                     <connections>
-                                                        <action selector="receptionHourButtonTap:" destination="e90-KJ-4Mj" eventType="touchUpInside" id="2Zc-pR-Y5C"/>
+                                                        <action selector="receptionTimeButtonTap:" destination="e90-KJ-4Mj" eventType="touchUpInside" id="BAV-uh-pLr"/>
                                                     </connections>
                                                 </button>
                                                 <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="isu-jt-7o4">
@@ -160,6 +160,9 @@
                                                     </constraints>
                                                     <inset key="contentEdgeInsets" minX="2" minY="0.0" maxX="2" maxY="0.0"/>
                                                     <state key="normal" title="11:00"/>
+                                                    <connections>
+                                                        <action selector="receptionTimeButtonTap:" destination="e90-KJ-4Mj" eventType="touchUpInside" id="teX-Kr-FpU"/>
+                                                    </connections>
                                                 </button>
                                                 <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ef2-u8-KZz">
                                                     <rect key="frame" x="108" y="95" width="43" height="30"/>
@@ -168,6 +171,9 @@
                                                     </constraints>
                                                     <inset key="contentEdgeInsets" minX="2" minY="0.0" maxX="2" maxY="0.0"/>
                                                     <state key="normal" title="12:00"/>
+                                                    <connections>
+                                                        <action selector="receptionTimeButtonTap:" destination="e90-KJ-4Mj" eventType="touchUpInside" id="RjO-yf-Ft9"/>
+                                                    </connections>
                                                 </button>
                                                 <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fEN-Fk-DW0">
                                                     <rect key="frame" x="159" y="95" width="43" height="30"/>
@@ -176,6 +182,9 @@
                                                     </constraints>
                                                     <inset key="contentEdgeInsets" minX="2" minY="0.0" maxX="2" maxY="0.0"/>
                                                     <state key="normal" title="13:00"/>
+                                                    <connections>
+                                                        <action selector="receptionTimeButtonTap:" destination="e90-KJ-4Mj" eventType="touchUpInside" id="Z9s-up-dZN"/>
+                                                    </connections>
                                                 </button>
                                                 <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Ic-2v-SwH">
                                                     <rect key="frame" x="210" y="95" width="43" height="30"/>
@@ -184,39 +193,42 @@
                                                     </constraints>
                                                     <inset key="contentEdgeInsets" minX="2" minY="0.0" maxX="2" maxY="0.0"/>
                                                     <state key="normal" title="14:00"/>
+                                                    <connections>
+                                                        <action selector="receptionTimeButtonTap:" destination="e90-KJ-4Mj" eventType="touchUpInside" id="QSe-z3-kvW"/>
+                                                    </connections>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="29" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i6L-sw-l7h">
-                                                    <rect key="frame" x="26" y="8" width="22" height="20.5"/>
+                                                    <rect key="frame" x="25.5" y="8" width="22" height="20.5"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Апрель" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wuX-oR-EK0">
-                                                    <rect key="frame" x="8" y="37" width="58.5" height="20.5"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="апреля" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wuX-oR-EK0">
+                                                    <rect key="frame" x="8" y="37" width="57" height="20.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Чт" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3IU-NH-Kg8">
-                                                    <rect key="frame" x="27" y="66" width="20" height="20.5"/>
+                                                    <rect key="frame" x="26.5" y="65.5" width="20" height="20.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Областная больница" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kxN-7u-Pfm">
-                                                    <rect key="frame" x="83" y="8" width="509" height="20.5"/>
+                                                    <rect key="frame" x="81.5" y="8" width="510.5" height="20.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="ул. Московский пр., 65" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lTd-ex-CBY">
-                                                    <rect key="frame" x="83" y="37" width="509" height="20.5"/>
+                                                    <rect key="frame" x="81.5" y="37" width="510.5" height="20.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Через-заборо-ногу-задирищенко А.В." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E4z-nd-aXr">
-                                                    <rect key="frame" x="83" y="66" width="509" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Через-заборо-ногу-задирищенко Александр Викторович" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E4z-nd-aXr">
+                                                    <rect key="frame" x="81.5" y="66" width="510.5" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
@@ -264,14 +276,14 @@
                                             <outlet property="clinicAddressLabel" destination="lTd-ex-CBY" id="Xrz-78-0zz"/>
                                             <outlet property="clinicNameLabel" destination="kxN-7u-Pfm" id="I5H-da-eg2"/>
                                             <outlet property="doctorNameLabel" destination="E4z-nd-aXr" id="lcD-du-m3y"/>
-                                            <outlet property="moreReceptionHoursButton" destination="WWP-5y-WVM" id="PfF-HA-hMJ"/>
+                                            <outlet property="moreReceptionTime" destination="WWP-5y-WVM" id="Lhe-Bw-Ep6"/>
                                             <outlet property="mounthLabel" destination="wuX-oR-EK0" id="bFk-n8-AGX"/>
                                             <outlet property="numberLabel" destination="i6L-sw-l7h" id="8lt-II-bWS"/>
-                                            <outlet property="recepientHours1" destination="pwk-tB-vaJ" id="Nr6-Fl-chZ"/>
-                                            <outlet property="recepientHours2" destination="isu-jt-7o4" id="TY3-0p-qJ1"/>
-                                            <outlet property="recepientHours3" destination="ef2-u8-KZz" id="nJH-1w-NDL"/>
-                                            <outlet property="recepientHours4" destination="fEN-Fk-DW0" id="lSc-bd-6nZ"/>
-                                            <outlet property="recepientHours5" destination="7Ic-2v-SwH" id="VOr-P4-aez"/>
+                                            <outlet property="receptionTime1" destination="pwk-tB-vaJ" id="ecg-Fp-Bwy"/>
+                                            <outlet property="receptionTime2" destination="isu-jt-7o4" id="bl4-vB-6r1"/>
+                                            <outlet property="receptionTime3" destination="ef2-u8-KZz" id="ueU-vh-8kS"/>
+                                            <outlet property="receptionTime4" destination="fEN-Fk-DW0" id="PRd-4t-jTu"/>
+                                            <outlet property="receptionTime5" destination="7Ic-2v-SwH" id="UAp-bd-Zyq"/>
                                             <outlet property="weekdayLabel" destination="3IU-NH-Kg8" id="qHN-aQ-sOY"/>
                                         </connections>
                                     </tableViewCell>
@@ -398,7 +410,7 @@
             </objects>
             <point key="canvasLocation" x="2267" y="1850"/>
         </scene>
-        <!--Auth View Controller-->
+        <!--Подтверждение записи-->
         <scene sceneID="3fz-tN-BnQ">
             <objects>
                 <viewController id="K6w-78-9zd" customClass="NADAuthViewController" sceneMemberID="viewController">
@@ -409,10 +421,96 @@
                     <view key="view" contentMode="scaleToFill" id="KzY-V9-IyJ">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Дата:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5gK-ci-cWH">
+                                <rect key="frame" x="8" y="88" width="46.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="29.04.2016" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F39-lo-wn7">
+                                <rect key="frame" x="62" y="88" width="86.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Время:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JG4-qB-Vf7">
+                                <rect key="frame" x="8" y="117" width="61" height="20.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10:45" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="571-uJ-sPb">
+                                <rect key="frame" x="77" y="117" width="43.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Врач:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gO5-oj-Keb">
+                                <rect key="frame" x="8" y="146" width="48" height="20.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Через-заборо-ногу-задирищенко Александр Викторович" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f08-Wi-RpH">
+                                <rect key="frame" x="64" y="146" width="465.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Ваши имя и фамилия" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LN6-de-fsH">
+                                <rect key="frame" x="46" y="191" width="508" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ico_user" translatesAutoresizingMaskIntoConstraints="NO" id="iHy-Bb-X1n">
+                                <rect key="frame" x="8" y="191" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="SGC-gt-Mqf"/>
+                                    <constraint firstAttribute="width" constant="30" id="cks-Z2-YfU"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ico_phone" translatesAutoresizingMaskIntoConstraints="NO" id="uCc-J6-0y6">
+                                <rect key="frame" x="8" y="239" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="KL4-og-a4h"/>
+                                    <constraint firstAttribute="width" constant="30" id="aPv-DD-jRN"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Номер телефона" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="e15-90-cKz">
+                                <rect key="frame" x="46" y="239" width="508" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                            </textField>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="5gK-ci-cWH" firstAttribute="leading" secondItem="KzY-V9-IyJ" secondAttribute="leading" constant="8" id="0Zf-bo-GKN"/>
+                            <constraint firstItem="uCc-J6-0y6" firstAttribute="leading" secondItem="KzY-V9-IyJ" secondAttribute="leading" constant="8" id="7yP-cn-zmM"/>
+                            <constraint firstItem="F39-lo-wn7" firstAttribute="baseline" secondItem="5gK-ci-cWH" secondAttribute="baseline" id="Eyt-Oo-nrJ"/>
+                            <constraint firstItem="uCc-J6-0y6" firstAttribute="top" secondItem="iHy-Bb-X1n" secondAttribute="bottom" constant="18" id="GY3-6D-VmT"/>
+                            <constraint firstItem="LN6-de-fsH" firstAttribute="leading" secondItem="iHy-Bb-X1n" secondAttribute="trailing" constant="8" id="Nbz-h1-Fcb"/>
+                            <constraint firstItem="f08-Wi-RpH" firstAttribute="leading" secondItem="gO5-oj-Keb" secondAttribute="trailing" constant="8" id="P5y-ZU-CvC"/>
+                            <constraint firstItem="LN6-de-fsH" firstAttribute="centerY" secondItem="iHy-Bb-X1n" secondAttribute="centerY" id="Y3u-GD-uhS"/>
+                            <constraint firstItem="gO5-oj-Keb" firstAttribute="top" secondItem="JG4-qB-Vf7" secondAttribute="bottom" constant="8.5" id="aAL-iH-VuR"/>
+                            <constraint firstItem="5gK-ci-cWH" firstAttribute="top" secondItem="sD6-k7-2Nu" secondAttribute="bottom" constant="24" id="acn-Yn-m7M"/>
+                            <constraint firstAttribute="trailing" secondItem="LN6-de-fsH" secondAttribute="trailing" constant="46" id="b7b-sy-dj5"/>
+                            <constraint firstItem="iHy-Bb-X1n" firstAttribute="leading" secondItem="KzY-V9-IyJ" secondAttribute="leading" constant="8" id="bZq-dK-aei"/>
+                            <constraint firstAttribute="trailing" secondItem="e15-90-cKz" secondAttribute="trailing" constant="46" id="hhR-pj-WXs"/>
+                            <constraint firstItem="571-uJ-sPb" firstAttribute="leading" secondItem="JG4-qB-Vf7" secondAttribute="trailing" constant="8" id="ioc-86-UjG"/>
+                            <constraint firstItem="e15-90-cKz" firstAttribute="centerY" secondItem="uCc-J6-0y6" secondAttribute="centerY" id="jjc-Tr-UiQ"/>
+                            <constraint firstItem="e15-90-cKz" firstAttribute="leading" secondItem="uCc-J6-0y6" secondAttribute="trailing" constant="8" id="nLK-VF-b9M"/>
+                            <constraint firstItem="F39-lo-wn7" firstAttribute="leading" secondItem="5gK-ci-cWH" secondAttribute="trailing" constant="8" id="pIp-av-NSs"/>
+                            <constraint firstItem="f08-Wi-RpH" firstAttribute="baseline" secondItem="gO5-oj-Keb" secondAttribute="baseline" id="ppB-ln-I1E"/>
+                            <constraint firstItem="gO5-oj-Keb" firstAttribute="leading" secondItem="KzY-V9-IyJ" secondAttribute="leading" constant="8" id="sUo-cD-8Ok"/>
+                            <constraint firstItem="571-uJ-sPb" firstAttribute="baseline" secondItem="JG4-qB-Vf7" secondAttribute="baseline" id="t0u-Fa-2So"/>
+                            <constraint firstItem="iHy-Bb-X1n" firstAttribute="top" secondItem="gO5-oj-Keb" secondAttribute="bottom" constant="24" id="wfE-fu-Thh"/>
+                            <constraint firstItem="JG4-qB-Vf7" firstAttribute="top" secondItem="5gK-ci-cWH" secondAttribute="bottom" constant="8.5" id="wpG-EE-SBR"/>
+                            <constraint firstItem="JG4-qB-Vf7" firstAttribute="leading" secondItem="KzY-V9-IyJ" secondAttribute="leading" constant="8" id="x1P-Hp-1Bd"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="sEZ-jA-O5t">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="Tug-y8-UkI">
+                    <navigationItem key="navigationItem" title="Подтверждение записи" id="sEZ-jA-O5t">
+                        <barButtonItem key="leftBarButtonItem" title="Отмена" id="Tug-y8-UkI">
                             <connections>
                                 <action selector="cancelButtonTapped:" destination="K6w-78-9zd" id="9dZ-TO-D3m"/>
                             </connections>
@@ -483,7 +581,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="d8R-hQ-EHz">
-                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="el4-iW-33N">
+                        <barButtonItem key="rightBarButtonItem" title="Готово" id="el4-iW-33N">
                             <connections>
                                 <action selector="doneButtonTapped:" destination="oru-aA-vAh" id="s5E-RU-O8R"/>
                             </connections>
@@ -571,6 +669,8 @@
     </scenes>
     <resources>
         <image name="btn_side_menu" width="32" height="32"/>
+        <image name="ico_phone" width="50" height="50"/>
+        <image name="ico_user" width="50" height="50"/>
         <image name="logo" width="1024" height="1024"/>
     </resources>
 </document>

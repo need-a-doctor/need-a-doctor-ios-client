@@ -20,6 +20,9 @@
 
 - (IBAction)recordButtonTapped:(UIBarButtonItem*)btn {
     [self dismissViewControllerAnimated:YES completion:nil];
+    
+    // TODO: HIGHLIGHT RECEPTION TIME
+    
 }
 
 @end

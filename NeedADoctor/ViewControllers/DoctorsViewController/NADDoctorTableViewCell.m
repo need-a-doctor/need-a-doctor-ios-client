@@ -10,8 +10,6 @@
 
 @interface NADDoctorTableViewCell ()
 
-//@property (weak, nonatomic) IBOutlet UIButton *receptionHours1Button;
-
 // Date
 @property (weak, nonatomic) IBOutlet UILabel *numberLabel;
 @property (weak, nonatomic) IBOutlet UILabel *mounthLabel;
@@ -22,14 +20,14 @@
 @property (weak, nonatomic) IBOutlet UILabel *clinicAddressLabel;
 @property (weak, nonatomic) IBOutlet UILabel *doctorNameLabel;
 
-// Reception hours
-@property (weak, nonatomic) IBOutlet UIButton *recepientHours1;
-@property (weak, nonatomic) IBOutlet UIButton *recepientHours2;
-@property (weak, nonatomic) IBOutlet UIButton *recepientHours3;
-@property (weak, nonatomic) IBOutlet UIButton *recepientHours4;
-@property (weak, nonatomic) IBOutlet UIButton *recepientHours5;
+// Reception time
+@property (weak, nonatomic) IBOutlet UIButton *receptionTime1;
+@property (weak, nonatomic) IBOutlet UIButton *receptionTime2;
+@property (weak, nonatomic) IBOutlet UIButton *receptionTime3;
+@property (weak, nonatomic) IBOutlet UIButton *receptionTime4;
+@property (weak, nonatomic) IBOutlet UIButton *receptionTime5;
 
-@property (weak, nonatomic) IBOutlet UIButton *moreReceptionHoursButton;
+@property (weak, nonatomic) IBOutlet UIButton *moreReceptionTime;
 
 // Day & Doctor models
 @property (nonatomic) NSDate *day;
@@ -45,14 +43,14 @@
     self.doctor = doctor;
     
     // Borders
-    for (UIButton *receptionButton in self.receptionHoursButtons) {
+    for (UIButton *receptionButton in self.receptionTimeButtons) {
         [self setupButtonUI:receptionButton];
         
     }
-    [self setupButtonUI:self.moreReceptionHoursButton];
+    [self setupButtonUI:self.moreReceptionTime];
     
     for (int i = 0; i < doctor.receptionTimes.count && i < 5; i++) {
-        UIButton *button = self.receptionHoursButtons[i];
+        UIButton *button = self.receptionTimeButtons[i];
         button.hidden = NO;
         NSDate *receptionTime = [doctor.receptionTimes[i] time];
         NSDateFormatter *formatter = [NSDateFormatter new];
@@ -61,7 +59,7 @@
         [button setTitle:receptionTimeString forState:UIControlStateNormal];
     }
     if (doctor.receptionTimes.count > 5) {
-        self.moreReceptionHoursButton.hidden = NO;
+        self.moreReceptionTime.hidden = NO;
     }
     
     NSDateComponents *components = [[NSCalendar currentCalendar] components:NSCalendarUnitYear|NSCalendarUnitMonth|NSCalendarUnitDay fromDate:day];
@@ -86,18 +84,18 @@
 }
 
 #pragma mark - Accessors
-- (NSArray *)receptionHoursButtons {
-    return @[self.recepientHours1,
-             self.recepientHours2,
-             self.recepientHours3,
-             self.recepientHours4,
-             self.recepientHours5
+- (NSArray *)receptionTimeButtons {
+    return @[self.receptionTime1,
+             self.receptionTime2,
+             self.receptionTime3,
+             self.receptionTime4,
+             self.receptionTime5
              ];
 }
 
 #pragma mark - User interaction
-- (IBAction)receptionHourButtonTap:(UIButton *)sender {
-    NSUInteger index = [self.receptionHoursButtons indexOfObject:sender];
+- (IBAction)receptionTimeButtonTap:(UIButton *)sender {
+    NSUInteger index = [self.receptionTimeButtons indexOfObject:sender];
     NADReceptionTime *receptionTime = self.doctor.receptionTimes[index];
     if ([self.delegate respondsToSelector:@selector(receptionTimeDidTapped:)]) {
         [self.delegate receptionTimeDidTapped:receptionTime];
